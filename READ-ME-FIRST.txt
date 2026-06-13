@@ -1,0 +1,22 @@
+FOCUS: HUMAN ANATOMY — Foundations unit
+Dr. Sharilyn Rennie
+
+WHAT'S HERE
+- foundations-human-anatomy.html  : the slide deck you present/record from (click "Present" for full screen).
+- Foundations-Human-Anatomy.pptx   : the accessible PowerPoint copy (real text + alt text; DOK 1-3 questions).
+- *.jpeg                            : the photo diagrams the HTML deck loads. Keep them in the SAME folder as the HTML.
+- diag-*.png                        : standalone copies of the built diagrams (levels, cavities, serous, intra-vs-retro).
+- logo-light.png                    : the three-figure logo (for dark backgrounds).
+
+TO ADD YOUR SEROUS-MEMBRANE PHOTOS (HTML deck)
+Save your three files into this folder with these EXACT names and they appear on the pleura/pericardium/peritoneum slides:
+  serous-pleura.jpg
+  serous-pericardium.jpg
+  serous-peritoneum.jpg
+(If they are PNGs, save as .jpg or ask me to switch the extension.)
+
+TO ADD THEM TO THE POWERPOINT
+Open the three serous slides and drag each image onto the slide.
+
+REUSE FOR OTHER COURSES
+The deck is class-agnostic and marked "Focus: Human Anatomy." For a physiology version, it becomes "Focus: Human Physiology."
