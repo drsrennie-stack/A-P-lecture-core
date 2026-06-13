@@ -5,7 +5,7 @@ foundations-human-anatomy.html : SELF-CONTAINED. All images and flow charts are
   files needed. Just upload this one file to the A-P-lecture-core repo, replacing the
   current foundations-human-anatomy.html.
 
-Foundations-Human-Anatomy.pptx : accessible PowerPoint copy. NOTE: still the older
+Foundations-Human-Anatomy.pptx : accessible PowerPoint copy. Now synced to the 30-slide deck with your real images (enlarged) and alt text.
   structure/images; tell me to sync it and I'll rebuild it to match this deck.
 
 Accessibility: WCAG 2.2 AA — alt text on every figure, aria-labels on the diagrams,
