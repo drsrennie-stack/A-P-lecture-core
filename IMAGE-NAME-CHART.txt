@@ -1,0 +1,11 @@
+FOCUS: HUMAN ANATOMY — image filename chart
+Rename your Keynote exports to the FILENAME (exact, lowercase, .png) and put them beside the HTML.
+
+SLIDE  FILENAME                  WHAT IT IS
+------------------------------------------------------------
+14     quadrants.png             Abdominopelvic quadrants
+15     nine-regions.png          Abdominopelvic regions (nine)
+17     mediastinum.png           Borders and contents of the mediastinum
+22     serous-pleura.png         Pleura: around the lungs
+23     serous-pericardium.png    Pericardium: around the heart
+24     serous-peritoneum.png     Peritoneum: around the abdominal organs

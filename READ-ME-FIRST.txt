@@ -1,12 +1,11 @@
 FOCUS: HUMAN ANATOMY — Foundations · Dr. Sharilyn Rennie
 
-Export from Keynote as PNG (transparent where easy) and save these beside the HTML:
-  quadrants.png        -> slide 15 (clean four quadrants)
-  nine-regions.png     -> slide 16 (nine abdominopelvic regions)   [erase the stray RLQ/LLQ text first]
-  mediastinum.png      -> slide 18 (BlueLink mediastinum image; keep its attribution)
-  serous-pleura.png / serous-pericardium.png / serous-peritoneum.png -> serous slides
-Until added, those figures stay hidden. Everything else (figures + flow charts) is baked in.
+The deck is now 30 slides; each diagram sits on its content slide.
+See IMAGE-NAME-CHART.txt: rename your 6 Keynote PNG exports to those exact
+names (lowercase, .png) and save them in the SAME folder as the HTML.
+Until added, those figures stay hidden (nothing looks broken).
+Everything else (flow charts, embedded figures) is baked in.
 
 For the PowerPoint, drag each PNG onto its slide.
-NOTE: the .pptx still has the previous structure; tell me when the HTML is final and I'll sync it.
-Class-agnostic, "Focus: Human Anatomy."
+NOTE: the .pptx still has the older structure; tell me when the HTML is final
+and I'll sync it in one pass. Class-agnostic, "Focus: Human Anatomy."
