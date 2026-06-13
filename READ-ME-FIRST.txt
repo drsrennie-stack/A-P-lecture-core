@@ -2,21 +2,18 @@ FOCUS: HUMAN ANATOMY — Foundations unit
 Dr. Sharilyn Rennie
 
 WHAT'S HERE
-- foundations-human-anatomy.html  : the slide deck you present/record from (click "Present" for full screen).
-- Foundations-Human-Anatomy.pptx   : the accessible PowerPoint copy (real text + alt text; DOK 1-3 questions).
-- *.jpeg                            : the photo diagrams the HTML deck loads. Keep them in the SAME folder as the HTML.
-- diag-*.png                        : standalone copies of the built diagrams (levels, cavities, serous, intra-vs-retro).
-- logo-light.png                    : the three-figure logo (for dark backgrounds).
+- foundations-human-anatomy.html : the slide deck (click "Present" for full screen).
+  All figures and flow charts are built IN, so it shows everything even opened by itself.
+- Foundations-Human-Anatomy.pptx  : accessible PowerPoint copy (real text + alt text; DOK 1-3 questions).
+- diag-*.png                       : standalone copies of the built diagrams.
+- logo-light.png                   : three-figure logo (for dark backgrounds).
 
-TO ADD YOUR SEROUS-MEMBRANE PHOTOS (HTML deck)
-Save your three files into this folder with these EXACT names and they appear on the pleura/pericardium/peritoneum slides:
-  serous-pleura.jpg
-  serous-pericardium.jpg
-  serous-peritoneum.jpg
-(If they are PNGs, save as .jpg or ask me to switch the extension.)
+THE ONLY IMAGES YOU STILL ADD: the three serous-membrane photos.
+Save your three files in the SAME folder as the HTML with these EXACT names:
+  serous-pleura.jpeg
+  serous-pericardium.jpeg
+  serous-peritoneum.jpeg
+They will then appear on the pleura / pericardium / peritoneum slides.
+(For the PowerPoint, open those three slides and drag each image on.)
 
-TO ADD THEM TO THE POWERPOINT
-Open the three serous slides and drag each image onto the slide.
-
-REUSE FOR OTHER COURSES
-The deck is class-agnostic and marked "Focus: Human Anatomy." For a physiology version, it becomes "Focus: Human Physiology."
+REUSE: class-agnostic, marked "Focus: Human Anatomy." A physiology version becomes "Focus: Human Physiology."
