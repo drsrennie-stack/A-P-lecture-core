@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Four Cells of the Epidermis · Mind Map · Human Anatomy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1530; --navy-deep:#142a36; --rust:#8B3A2E; --terra:#C2734D;
+  --gold:#B8924A; --offwhite:#FAFAF9; --line:rgba(11,21,48,.16);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--offwhite);color:var(--navy);
+  font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  line-height:1.5;padding:0}
+.skip{position:absolute;left:-999px;top:auto}
+.skip:focus{left:12px;top:12px;background:var(--navy);color:#fff;padding:10px 14px;border-radius:8px;z-index:50}
+.wrap{max-width:1120px;margin:0 auto;padding:22px max(16px,3vw) 40px}
+header.top{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:8px}
+.eyebrow{font-family:"DM Sans",sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--terra);margin:0 0 4px}
+h1{font-size:clamp(22px,3vw,30px);font-weight:800;margin:0;color:var(--navy)}
+.usage{font-style:italic;color:#3a4658;font-size:14px;margin:10px 0 0}
+.btn{font-family:"Plus Jakarta Sans",sans-serif;font-weight:700;font-size:13px;letter-spacing:.03em;
+  border:1px solid var(--navy);background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;cursor:pointer}
+.btn:hover{background:var(--navy-deep)}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* mind map grid */
+.map{position:relative;margin-top:22px;
+  display:grid;gap:16px;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:"k m" "c c" "t d";
+  align-items:stretch}
+@media(min-width:840px){
+  .map{grid-template-columns:1fr minmax(220px,300px) 1fr;
+    grid-template-areas:"k c m" "t c d";align-items:center;gap:26px 30px}
+}
+.center{grid-area:c;align-self:center;justify-self:center;width:100%;max-width:320px;
+  background:var(--navy);color:#fff;border-radius:16px;padding:22px 20px;text-align:center;
+  box-shadow:0 8px 20px rgba(11,21,48,.18);z-index:2}
+.center .ctag{font-family:"DM Sans",sans-serif;font-size:11px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+.center h2{font-size:20px;font-weight:800;margin:0;line-height:1.25}
+.center p{margin:8px 0 0;font-size:13px;color:#cdd6e0}
+
+.branch{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:0 16px 14px;box-shadow:0 1px 3px rgba(0,0,0,.08);z-index:2;
+  transition:transform 200ms ease,box-shadow 200ms ease}
+.branch:hover{transform:translateY(-2px);box-shadow:0 8px 16px rgba(0,0,0,.10)}
+.branch.k{grid-area:k} .branch.m{grid-area:m} .branch.t{grid-area:t} .branch.d{grid-area:d}
+.branch h3{display:inline-block;margin:-1px 0 10px;padding:8px 14px;border-radius:0 0 12px 12px;
+  font-size:16px;font-weight:800;letter-spacing:.01em}
+.branch.k h3{background:var(--navy);color:#fff}
+.branch.m h3{background:var(--rust);color:#fff}
+.branch.t h3{background:var(--gold);color:var(--navy)}
+.branch.d h3{background:var(--terra);color:var(--navy)}
+.branch dl{margin:0}
+.branch dl>div{display:grid;grid-template-columns:74px 1fr;gap:6px 10px;
+  padding:7px 0;border-top:1px solid #eef1f4}
+.branch dl>div:first-child{border-top:0}
+.branch dt{font-family:"DM Sans",sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--rust);padding-top:2px}
+.branch dd{margin:0;font-size:14.5px;color:#1d2733}
+
+/* decorative connectors */
+.links{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;display:none}
+@media(min-width:840px){.links{display:block}}
+
+.legend{margin-top:24px;font-size:13px;color:#3a4658;border-top:1px solid var(--line);padding-top:14px}
+.foot{margin-top:14px;font-size:12px;color:#5a6573}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{
+  body{background:#fff}
+  .btn,.skip{display:none!important}
+  .branch{box-shadow:none;break-inside:avoid}
+  .center{box-shadow:none}
+  .links{display:block}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#map">Skip to the mind map</a>
+<div class="wrap">
+<header class="top">
+  <div>
+    <p class="eyebrow">BIO 004 · Human Anatomy · Integumentary</p>
+    <h1>The four cells of the epidermis</h1>
+  </div>
+  <button class="btn" id="printBtn" type="button">Print / Save PDF</button>
+</header>
+<p class="usage">One center idea, four cells. For each cell, read its three spokes: where it sits, what its job is, and how to spot it.</p>
+
+<section id="map" aria-labelledby="map-center-title">
+  <div class="map">
+    <!-- decorative branch connectors -->
+    <svg class="links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <g stroke="#B8924A" stroke-width="0.5" fill="none" opacity="0.7">
+        <path d="M50,38 C34,30 26,28 16,27"/>
+        <path d="M50,38 C66,30 74,28 84,27"/>
+        <path d="M50,62 C34,70 26,72 16,73"/>
+        <path d="M50,62 C66,70 74,72 84,73"/>
+      </g>
+    </svg>
+
+    <div class="center">
+      <p class="ctag">Epidermis</p>
+      <h2 id="map-center-title">The four cells of the epidermis</h2>
+      <p>Mostly keratinocytes, plus three specialist cells living among them.</p>
+    </div>
+
+    <article class="branch k" aria-label="Keratinocytes">
+      <h3>Keratinocytes</h3>
+      <dl>
+        <div><dt>Where</dt><dd>Every stratum. They are the bulk of the epidermis.</dd></div>
+        <div><dt>Job</dt><dd>Make keratin for the barrier and produce water-resistant cells.</dd></div>
+        <div><dt>Spot it</dt><dd>Linked by desmosomes; flatten and die as they rise.</dd></div>
+      </dl>
+    </article>
+
+    <article class="branch m" aria-label="Melanocytes">
+      <h3>Melanocytes</h3>
+      <dl>
+        <div><dt>Where</dt><dd>Stratum basale.</dd></div>
+        <div><dt>Job</dt><dd>Make melanin and hand it to keratinocytes to shield DNA from UV.</dd></div>
+        <div><dt>Spot it</dt><dd>Spidery cells with long processes in the deepest layer.</dd></div>
+      </dl>
+    </article>
+
+    <article class="branch t" aria-label="Tactile, or Merkel, cells">
+      <h3>Tactile (Merkel) cells</h3>
+      <dl>
+        <div><dt>Where</dt><dd>Stratum basale, paired with a nerve ending.</dd></div>
+        <div><dt>Job</dt><dd>Sense light touch.</dd></div>
+        <div><dt>Spot it</dt><dd>Sit at the dermal border with a sensory disc.</dd></div>
+      </dl>
+    </article>
+
+    <article class="branch d" aria-label="Dendritic, or Langerhans, cells">
+      <h3>Dendritic (Langerhans) cells</h3>
+      <dl>
+        <div><dt>Where</dt><dd>Mainly stratum spinosum.</dd></div>
+        <div><dt>Job</dt><dd>Immune cells that patrol for invaders.</dd></div>
+        <div><dt>Spot it</dt><dd>Star-shaped, mobile, arise from bone marrow.</dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+<p class="legend"><strong>Recall move:</strong> cover the spokes and rebuild each cell from memory: name, where, job, spot it. Then draw the map from the center out.</p>
+<p class="foot">Dr. Sharilyn Rennie · Focus: Human Anatomy</p>
+</div>
+
+<script>
+(function(){var pr=document.getElementById('printBtn');if(pr)pr.addEventListener('click',function(){window.print();});})();
+/* iframe height-sender */
+(function(){function send(){try{var h=document.documentElement.scrollHeight;parent.postMessage({type:'resize',id:'epidermal-cells-mind-map',height:h},'*');}catch(e){}}
+window.addEventListener('load',send);window.addEventListener('resize',send);
+if(window.ResizeObserver){new ResizeObserver(send).observe(document.body);}})();
+</script>
+</body>
+</html>
