@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Majors &middot; The Axial Skeleton &middot; Human Anatomy &middot; Dr. Sharilyn Rennie</title>
+<style>
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,Arial,sans-serif;background:#FAFAF9;color:#060A18;font-size:16px;line-height:1.5}
+button{font-family:inherit} a{color:#8B3A2E}
+:focus-visible{outline:3px solid #8B3A2E;outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;position:fixed;background:#060A18;color:#fff;padding:10px 14px;border-radius:4px;z-index:80}
+.site-header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px max(16px,3vw);background:#fff;border-bottom:1px solid rgba(11,21,48,.14)}
+.site-header .id{flex:1;min-width:240px;display:flex;align-items:center;gap:14px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#8B3A2E;display:block;margin-bottom:2px}
+.site-header h1{font-size:18px;font-weight:800;margin:0;color:#0B1530}
+.site-header h1 .ac{color:#8B3A2E}
+.btn{font-weight:700;font-size:13px;letter-spacing:.04em;border:1px solid #060A18;background:#060A18;color:#fff;padding:10px 16px;border-radius:6px;cursor:pointer}
+.btn:hover{background:#16213d}
+.deck{max-width:1180px;margin:0 auto;padding:24px max(16px,3vw) 40px}
+.slide{background:#fff;border:1px solid rgba(11,21,48,.14);border-radius:12px;box-shadow:0 1px 3px rgba(11,21,48,.06);margin-bottom:22px;overflow:hidden}
+.slide-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:15px 20px;background:#FAFAF9;border-bottom:1px solid rgba(11,21,48,.14)}
+.slide-num{font-size:28px;font-weight:800;color:#8B3A2E;min-width:46px}
+.slide-eyebrow{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#060A18;opacity:.6;margin:0 0 3px}
+.slide-title{font-size:clamp(18px,2.2vw,24px);font-weight:800;margin:0}
+.slide-meta{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8B3A2E}
+.slide-body{padding:22px}
+.lead-in{font-size:17px;font-weight:600;margin:0 0 14px}
+.slide-content h3{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8B3A2E;margin:0 0 14px}
+.slide-content ul{margin:0;padding:0;list-style:none}
+.slide-content li{font-size:15.5px;line-height:1.5;padding:5px 0 5px 18px;position:relative}
+.slide-content li::before{content:"";position:absolute;left:2px;top:12px;width:7px;height:7px;background:#8B3A2E;border-radius:50%}
+.slide-content li strong{font-weight:800}
+.split{display:grid;grid-template-columns:minmax(260px,1fr) minmax(280px,1.05fr);gap:22px;align-items:center}
+.takeaway{margin-top:16px;padding:14px 16px;background:#FAFAF9;border-left:3px solid #8B3A2E;border-radius:6px;font-size:15px}
+.takeaway strong{color:#8B3A2E}
+.figcol{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0}
+.slidefig{width:100%;height:auto;max-width:620px;border-radius:8px;background:#fff;cursor:zoom-in}
+.figcap{font-size:12.5px;color:#060A18;opacity:.78;text-align:center;margin:8px 0 0}
+.figcap strong{color:#8B3A2E;opacity:1}
+.divider .slide-header{display:none}
+.divider .slide-body{padding:0}
+.divhero{background:#060A18;color:#fff;padding:9vh 6vw;min-height:46vh;display:flex;flex-direction:column;justify-content:center}
+.divhero .dn{font-size:13px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#DCB45C;margin:0 0 10px}
+.divhero h2{font-size:clamp(26px,4vw,46px);font-weight:800;margin:0 0 10px;line-height:1.06}
+.divhero p{font-size:clamp(15px,1.6vw,20px);opacity:.9;margin:0;max-width:64ch}
+.q{border:1px solid rgba(11,21,48,.14);border-left:4px solid #8B3A2E;background:#fff;border-radius:8px;padding:16px 18px;margin:0 0 14px}
+.q .lab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8B3A2E;margin:0 0 8px}
+.q .prompt2{font-weight:700;font-size:16px;margin:0 0 12px}
+.choices{display:flex;gap:10px;flex-wrap:wrap}
+.choice{font-weight:700;font-size:15px;border-radius:6px;cursor:pointer;border:1px solid #060A18;background:#fff;color:#060A18;padding:10px 15px}
+.choice:hover{background:#EAEEF4}
+.choice.right{background:#EAEEF4;border-color:#0B1530;color:#0B1530}
+.choice.wrong{border-color:rgba(11,21,48,.14);opacity:.55}
+.reveal{margin:12px 0 0;border:1px solid rgba(11,21,48,.14);background:#FAFAF9;border-radius:6px;padding:12px 14px}
+.reveal[hidden]{display:none}.reveal .rlab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6E5018;margin:0 0 6px}.reveal p{margin:0}
+.foot{margin:8px max(16px,3vw) 30px;font-size:12px;color:#060A18;opacity:.6;border-top:1px solid rgba(11,21,48,.14);padding-top:12px;max-width:1180px}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+body.present{overflow:hidden;background:#060A18}
+body.present .site-header,body.present .foot{display:none}
+body.present .deck{max-width:none;margin:0;padding:0}
+body.present .slide{display:none}
+body.present .slide.is-current{display:flex;flex-direction:column;position:fixed;inset:0;margin:0;border:0;border-radius:0;box-shadow:none;overflow:auto;background:#fff}
+body.present .slide.is-current .slide-body{flex:1;max-width:1280px;width:100%;margin:0 auto;padding:2.5vh 5vw;display:flex;flex-direction:column;justify-content:center}
+body.present .slide-content li{font-size:clamp(16px,1.7vw,25px);padding:7px 0 7px 26px}
+body.present .slide-content li::before{top:15px;width:9px;height:9px}
+body.present .slide-content h3{font-size:clamp(15px,1.5vw,20px)!important}
+body.present .lead-in{font-size:clamp(18px,2vw,28px)}
+body.present .slidefig{max-width:100%;max-height:70vh;width:auto;height:auto}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,10,24,.93);display:flex;align-items:center;justify-content:center;padding:3vh 3vw;cursor:zoom-out}
+.lightbox[hidden]{display:none}
+.lightbox .lb-img{max-width:96vw;max-height:94vh;width:auto;height:auto;border-radius:6px;background:#fff;cursor:default}
+.lightbox .lb-close{position:fixed;top:16px;right:20px;background:#8B3A2E;color:#fff;border:0;border-radius:8px;font-size:24px;line-height:1;width:46px;height:46px;cursor:pointer}
+body.present .q .prompt2{font-size:clamp(18px,1.8vw,25px)}
+body.present .choice{font-size:clamp(16px,1.6vw,21px);padding:13px 19px}
+body.present .reveal{font-size:clamp(15px,1.5vw,21px)}
+.present-bar{position:fixed;z-index:70;left:50%;bottom:18px;transform:translateX(-50%);display:none;align-items:center;gap:10px;background:rgba(11,21,48,.92);color:#fff;padding:8px 12px;border-radius:999px}
+body.present .present-bar{display:flex}
+.present-bar button{font-weight:700;font-size:16px;border:0;border-radius:999px;background:#8B3A2E;color:#fff;width:42px;height:42px;cursor:pointer}
+.present-bar button:disabled{background:#3a4357}.present-bar .count{font-size:13px;font-weight:700;min-width:62px;text-align:center}
+.present-bar .exit{width:auto;padding:0 14px;background:transparent;border:1px solid rgba(255,255,255,.4)}
+@media print{.site-header,.present-bar,.foot,#presentBtn{display:none}.slide{break-inside:avoid;page-break-after:always;box-shadow:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.tkey{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;align-items:start;margin-top:4px}
+.tkey .tcol{border:1px solid rgba(11,21,48,.18);border-radius:10px;overflow:hidden;background:#fff}
+.tkey .th{padding:8px 12px;font-weight:800;font-size:14px;letter-spacing:.02em}
+.tkey .th small{display:block;font-weight:600;font-size:11px;opacity:.95}
+.tkey .th.ep{background:#C9A14A;color:#0B1530}
+.tkey .th.ct{background:#8B3A2E;color:#fff}
+.tkey .th.mu{background:#0B1530;color:#fff}
+.tkey .th.ne{background:#142a36;color:#fff}
+.tkey .sub{padding:9px 12px}
+.tkey .grp{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8B3A2E;margin:9px 0 4px}
+.tkey .grp:first-child{margin-top:0}
+.tkey .it{font-size:12.5px;line-height:1.34;margin:0 0 7px;color:#1d2733}
+.tkey .it b{color:#0B1530}
+.tkey .it .tell{color:#3a4658}
+@media (max-width:760px){.tkey{grid-template-columns:1fr}}
+@media print{.tkey{grid-template-columns:repeat(2,1fr)}.tkey .tcol{break-inside:avoid}}
+.imgph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:200px;border:2px dashed #B8924A;border-radius:10px;background:#FAFAF9;color:#8B3A2E;text-align:center;padding:18px}.imgph .ph-t{font-weight:800;font-size:14px}.imgph .ph-s{font-weight:600;font-size:12px;color:#5a6573}.dtable{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}.dtable caption{text-align:left;font-weight:700;color:#8B3A2E;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.dtable th,.dtable td{border:1px solid rgba(11,21,48,.18);padding:8px 10px;text-align:left;vertical-align:top}.dtable thead th{background:#0B1530;color:#fff}.dtable tbody th{background:#FAFAF9;color:#0B1530;white-space:nowrap}.dtable tbody tr:nth-child(even) td{background:#FAFAF9}@media print{.imgph{min-height:120px}.dtable{font-size:10.5px}}
+.treewrap{overflow-x:auto;padding-bottom:8px;margin-top:12px}
+.tree{display:inline-block;min-width:100%;box-sizing:border-box}
+.tree ul{position:relative;padding:24px 0 0;white-space:nowrap;margin:0;text-align:center;list-style:none}
+.tree>ul{padding-top:0}
+.tree li{display:inline-block;vertical-align:top;text-align:center;position:relative;padding:24px 7px 0}
+.tree li::before,.tree li::after{content:"";position:absolute;top:0;right:50%;border-top:2px solid rgba(11,21,48,.3);width:50%;height:24px}
+.tree li::after{right:auto;left:50%;border-left:2px solid rgba(11,21,48,.3)}
+.tree li:only-child::before,.tree li:only-child::after{display:none}
+.tree li:only-child{padding-top:0}
+.tree li:first-child::before,.tree li:last-child::after{border:0 none}
+.tree li:last-child::before{border-right:2px solid rgba(11,21,48,.3);border-radius:0 6px 0 0}
+.tree li:first-child::after{border-radius:6px 0 0 0}
+.tree ul ul::before{content:"";position:absolute;top:0;left:50%;border-left:2px solid rgba(11,21,48,.3);width:0;height:24px}
+.node{display:inline-block;white-space:normal;width:152px;vertical-align:top;border-radius:9px;padding:9px 12px;line-height:1.28;border:1px solid rgba(11,21,48,.18);background:#fff;box-shadow:0 1px 2px rgba(11,21,48,.05);text-align:left}
+.node b{display:block;font-weight:800;font-size:13.5px;color:#0B1530}
+.node small{display:block;font-weight:600;font-size:11px;color:#3a4658;margin-top:2px}
+.node.root{background:#0B1530;border-color:#0B1530;width:172px}
+.node.root b{color:#fff}.node.root small{color:#cfd6e4}
+.node.trunk{border-left:5px solid #0B1530}
+.node.dir{border-left:5px solid #C9A14A}
+.node.eff{border-left:5px solid #8B3A2E}
+.treekey{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px;font-size:12px;font-weight:700;color:#3a4658}
+.treekey span{display:inline-flex;align-items:center;gap:7px}
+.treekey i{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(11,21,48,.2)}
+body.present .node b{font-size:15px}
+body.present .node small{font-size:12px}
+body.present .node{width:165px}.body.present .node.root{width:190px}
+@media print{.node{box-shadow:none}.treewrap{overflow:visible}}
+.slide-tools{display:flex;justify-content:flex-end;margin:0 0 12px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:12.5px;letter-spacing:.03em;border:1px solid #0B1530;background:#0B1530;color:#fff;padding:8px 15px;border-radius:999px;cursor:pointer}
+.pill:hover{background:#16213d}.pill svg{display:block;flex:none}
+.imgmodal{position:fixed;inset:0;z-index:110;background:rgba(6,10,24,.93);display:flex;align-items:center;justify-content:center;padding:3vh 3vw}
+.imgmodal[hidden]{display:none}
+.imgmodal-card{background:#fff;border-radius:12px;padding:20px;max-width:1040px;width:100%;max-height:92vh;overflow:auto;position:relative;box-shadow:0 18px 50px rgba(6,10,24,.5)}
+.imgmodal-card .mh{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8B3A2E;margin:0 44px 10px 0}
+.imgmodal-card svg.nrn{width:100%;height:auto;display:block}
+.imgmodal-cap{font-size:13px;color:#3a4658;margin:12px 4px 0;line-height:1.5}
+.imgmodal-close{position:absolute;top:12px;right:12px;background:#8B3A2E;color:#fff;border:0;border-radius:9px;width:42px;height:42px;font-size:24px;line-height:1;cursor:pointer}
+.imgmodal-close:hover{background:#A0522D}
+@media print{.pill,.slide-tools,.imgmodal{display:none!important}}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin-top:14px}
+.figcard{border:1px solid rgba(11,21,48,.18);border-radius:10px;padding:12px 12px 14px;text-align:center;background:#fff}
+.figcard svg{width:100%;height:auto;max-width:210px;display:block;margin:0 auto}
+.figcard .fl{font-weight:800;font-size:13px;color:#0B1530;margin:9px 0 2px}
+.figcard .fs{font-size:11.5px;color:#3a4658;line-height:1.4}
+.figsvg{width:100%;height:auto;display:block;max-width:520px;margin:0 auto}
+@media print{.figrow{grid-template-columns:repeat(3,1fr)}.figcard{break-inside:avoid}}
+</style></head><body>
+<a href="#deck" class="skip">Skip to slides</a>
+<header class="site-header"><div class="id"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:46px;width:auto"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#0B1530"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#0B1530"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#8B3A2E"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#8B3A2E"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg><div><span class="eyebrow">Majors &middot; Human Anatomy</span><h1>Human <span class="ac">Anatomy</span> &middot; Axial Skeleton</h1></div></div><div class="hero-actions"><button class="btn" id="backBtn" type="button" hidden>&larr; Back</button> <button class="btn" id="presentBtn" type="button">Present</button> <button class="btn" id="printBtn" type="button">Print / Save PDF</button></div></header>
+<main class="deck" id="deck">
+
+<section class="slide divider" aria-label="Title"><div class="slide-body"><div class="divhero"><div style="margin:0 0 14px"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:64px;width:auto;display:block"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#FFFFFF"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#FFFFFF"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#C2734D"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#C2734D"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg></div><p class="dn">Majors &middot; Human Anatomy</p><h2>The Axial Skeleton</h2><p>The skull, the vertebral column, and the thoracic cage, the central axis of the body. We name every bone, its key markings, the sutures and fontanelles, the foramina, a typical vertebra, and the sternum and ribs. &nbsp;Dr. Sharilyn Rennie</p></div></div></section>
+
+<section class="slide " aria-label="By the end of this lecture">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Objectives</p><h2 class="slide-title">By the end</h2></div><div class="slide-meta">Axial</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Distinguish the <strong>cranial bones</strong> from the <strong>facial bones</strong> and name the bones in each group.</li><li>Identify the major <strong>sutures, fontanelles, foramina</strong>, and the bones of the orbit, nasal cavity, and hard palate.</li><li>Name the <strong>regions and curvatures</strong> of the vertebral column and label a <strong>typical vertebra</strong>.</li><li>Distinguish <strong>cervical, thoracic, and lumbar</strong> vertebrae and describe the atlas, axis, sacrum, and coccyx.</li><li>Identify the bones and markings of the <strong>thoracic cage</strong>.</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 1 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 1</p><h2>The Skull</h2><p>Twenty-two bones in two groups: the cranium that encloses the brain, and the facial skeleton that frames the face.</p></div></div></section>
+
+<section class="slide " aria-label="The skull, an overview">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Overview</p><h2 class="slide-title">The skull, an overview</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><div class="slide-tools"><button type="button" class="pill" id="skullPillBtn" aria-haspopup="dialog" title="Open a labeled lateral skull to point at while you teach"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="11" r="8" fill="none" stroke="#fff" stroke-width="2"/><circle cx="9" cy="10" r="1.6" fill="#fff"/><path d="M8 19 h8" stroke="#fff" stroke-width="2"/></svg>Pull up the skull</button></div>
+<div class="slide-content"><ul><li>The <strong>skull</strong> is 22 bones, plus the associated <strong>hyoid bone</strong> of the neck (counted separately).</li><li>The <strong>cranium</strong> is the eight cranial bones that enclose and protect the brain; the <strong>facial skeleton</strong> is the fourteen facial bones that frame the face and hold the teeth.</li><li>The <strong>calvaria</strong> is the domed roof (skullcap); the <strong>cranial base</strong> is the floor, shaped into anterior, middle, and posterior <strong>cranial fossae</strong>.</li></ul></div></div></section>
+
+<section class="slide " aria-label="The eight cranial bones">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Cranium</p><h2 class="slide-title">The eight cranial bones</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><table class="dtable"><caption>The neurocranium, the braincase</caption><thead><tr><th scope="col">Bone</th><th scope="col">Number</th><th scope="col">Region it forms</th></tr></thead><tbody><tr><th scope="row">Frontal bone</th><td>single</td><td>The forehead, roof of the orbits, floor of the anterior cranial fossa.</td></tr><tr><th scope="row">Parietal bones</th><td>paired</td><td>The superior and lateral walls of the cranium.</td></tr><tr><th scope="row">Temporal bones</th><td>paired</td><td>The inferior lateral walls and part of the cranial base; house the ear.</td></tr><tr><th scope="row">Occipital bone</th><td>single</td><td>The posterior wall and much of the cranial base.</td></tr><tr><th scope="row">Sphenoid bone</th><td>single</td><td>The central wedge of the cranial base; articulates with every other cranial bone.</td></tr><tr><th scope="row">Ethmoid bone</th><td>single</td><td>The deepest cranial bone, between the orbits; forms part of the nasal cavity.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Markings of the frontal, parietal, and temporal bones">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Cranial markings</p><h2 class="slide-title">Markings: frontal, parietal, temporal</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><table class="dtable"><caption>Significant markings, bone by bone</caption><thead><tr><th scope="col">Bone</th><th scope="col">Key markings</th></tr></thead><tbody><tr><th scope="row">Frontal</th><td>Squamous part, supraorbital margin and <strong>supraorbital foramen</strong> (supraorbital nerve), glabella, orbital plates, frontal sinus.</td></tr><tr><th scope="row">Parietal</th><td>Form the cranial roof; meet at the <strong>sagittal suture</strong>; the parietal eminence is the skull's widest point.</td></tr><tr><th scope="row">Temporal</th><td>Squamous part, zygomatic process (forms the <strong>zygomatic arch</strong>), mandibular fossa (the TMJ socket), external acoustic meatus, mastoid process, styloid process, petrous part, internal acoustic meatus, stylomastoid foramen (facial nerve).</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Markings of the occipital, sphenoid, and ethmoid bones">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Cranial markings</p><h2 class="slide-title">Markings: occipital, sphenoid, ethmoid</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><table class="dtable"><caption>Significant markings, bone by bone</caption><thead><tr><th scope="col">Bone</th><th scope="col">Key markings</th></tr></thead><tbody><tr><th scope="row">Occipital</th><td><strong>Foramen magnum</strong> (spinal cord), occipital condyles (meet the atlas at the &ldquo;yes&rdquo; joint), external occipital protuberance, hypoglossal canal (CN XII).</td></tr><tr><th scope="row">Sphenoid</th><td>Body with the sphenoid sinus, <strong>sella turcica</strong> (cradles the pituitary), greater and lesser wings, pterygoid processes, optic canal (CN II), superior orbital fissure.</td></tr><tr><th scope="row">Ethmoid</th><td>Crista galli (anchors the falx cerebri), <strong>cribriform plate</strong> (olfactory filaments), perpendicular plate (nasal septum), lateral masses with air cells, superior and middle conchae.</td></tr></tbody></table><div class="takeaway">Through the <strong>foramen magnum</strong>: the medulla oblongata, vertebral arteries, spinal arteries, spinal accessory nerve (CN XI), and the alar and apical ligaments of the dens. Mnemonic: &ldquo;VAMPires Sing AT Midnight.&rdquo;</div></div></section>
+
+<section class="slide " aria-label="The fourteen facial bones">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Face</p><h2 class="slide-title">The fourteen facial bones</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><table class="dtable"><caption>The viscerocranium: six paired, two single (vomer, mandible)</caption><thead><tr><th scope="col">Bone</th><th scope="col">Number</th><th scope="col">What it forms</th></tr></thead><tbody><tr><th scope="row">Maxillae</th><td>paired</td><td>The upper jaw; the anterior hard palate; hold the upper teeth.</td></tr><tr><th scope="row">Palatine bones</th><td>paired</td><td>The posterior hard palate and part of the orbit.</td></tr><tr><th scope="row">Zygomatic bones</th><td>paired</td><td>The cheekbones.</td></tr><tr><th scope="row">Nasal bones</th><td>paired</td><td>The bridge of the nose.</td></tr><tr><th scope="row">Lacrimal bones</th><td>paired</td><td>The medial wall of the orbit, grooved for the tear duct.</td></tr><tr><th scope="row">Inferior nasal conchae</th><td>paired</td><td>Scroll-shaped bones on the lateral wall of the nasal cavity.</td></tr><tr><th scope="row">Vomer</th><td>single</td><td>The inferior part of the nasal septum.</td></tr><tr><th scope="row">Mandible</th><td>single</td><td>The lower jaw, the only freely movable bone of the skull.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="The maxillae and the mandible in detail">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Face</p><h2 class="slide-title">The maxillae and the mandible</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><table class="dtable"><caption>The two largest facial bones</caption><thead><tr><th scope="col">Bone</th><th scope="col">Markings</th></tr></thead><tbody><tr><th scope="row">Maxillae</th><td>Body (maxillary sinus), alveolar process (upper teeth), palatine process (anterior hard palate), frontal process, zygomatic process, <strong>infraorbital foramen</strong> (infraorbital nerve).</td></tr><tr><th scope="row">Mandible</th><td>Body (lower teeth), ramus, angle, condylar process (the jaw joint), coronoid process (temporalis muscle), mandibular notch, alveolar process, <strong>mental foramen</strong> (chin and lip), <strong>mandibular foramen</strong> (the dental-block target).</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Sutures of the skull">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Joints</p><h2 class="slide-title">The major sutures</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><p class="lead-in">A <strong>suture</strong> is an immovable fibrous joint between skull bones.</p><table class="dtable"><caption>Four sutures plus the pterion</caption><thead><tr><th scope="col">Suture</th><th scope="col">Bones it joins</th><th scope="col">Location</th></tr></thead><tbody><tr><th scope="row">Coronal</th><td>Frontal + the two parietals</td><td>Across the top, behind the forehead.</td></tr><tr><th scope="row">Sagittal</th><td>The two parietals</td><td>The midline of the skull roof.</td></tr><tr><th scope="row">Lambdoid</th><td>Parietals + occipital</td><td>The back of the skull.</td></tr><tr><th scope="row">Squamous</th><td>Parietal + temporal</td><td>The lower side, one each side.</td></tr><tr><th scope="row">Pterion</th><td>Frontal, parietal, temporal, sphenoid</td><td>The H-shaped junction on the side, the thinnest part.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Fontanelles of the infant skull">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Infant skull</p><h2 class="slide-title">The fontanelles</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><p class="lead-in"><strong>Fontanelles</strong> are fibrous membrane gaps between an infant's skull bones; they let the skull compress during birth and grow with the brain.</p><table class="dtable"><caption>The four named fontanelles</caption><thead><tr><th scope="col">Fontanelle</th><th scope="col">Location</th><th scope="col">Closes by</th></tr></thead><tbody><tr><th scope="row">Anterior (largest)</th><td>Where the frontal and parietal bones meet.</td><td>About 18 to 24 months.</td></tr><tr><th scope="row">Posterior (occipital)</th><td>Where the parietals meet the occipital.</td><td>About 2 months.</td></tr><tr><th scope="row">Anterolateral (sphenoidal)</th><td>On the side, one each side.</td><td>About 3 months.</td></tr><tr><th scope="row">Posterolateral (mastoid)</th><td>Behind the ear, one each side.</td><td>By about 12 months.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Cavities, sinuses, and the hyoid bone">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Cavities</p><h2 class="slide-title">Cavities, sinuses, and the hyoid</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li><strong>The orbit</strong>: the bony eye socket, built from seven bones (frontal, sphenoid, zygomatic, maxilla, lacrimal, ethmoid, palatine).</li><li><strong>Nasal cavity</strong>: the space behind the nose; the <strong>nasal septum</strong> is the vomer + perpendicular plate of the ethmoid + septal cartilage.</li><li><strong>Hard palate</strong>: the bony roof of the mouth, maxillae in front and palatine bones behind.</li><li><strong>Hyoid bone</strong>: a U-shaped bone in the neck that anchors the tongue; the only bone that articulates with no other bone.</li></ul></div><table class="dtable" style="margin-top:14px"><caption>The four paranasal sinuses (air spaces that drain into the nasal cavity)</caption><thead><tr><th scope="col">Sinus</th><th scope="col">Bone it occupies</th></tr></thead><tbody><tr><th scope="row">Frontal</th><td>The frontal bone, above the orbits.</td></tr><tr><th scope="row">Ethmoidal</th><td>The ethmoid air cells, between the orbits.</td></tr><tr><th scope="row">Sphenoidal</th><td>Within the body of the sphenoid.</td></tr><tr><th scope="row">Maxillary (largest)</th><td>The maxillae, in the cheek region.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Major foramina of the skull">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Foramina</p><h2 class="slide-title">Major foramina</h2></div><div class="slide-meta">Skull</div></header>
+<div class="slide-body"><p class="lead-in">A <strong>foramen</strong> lets a nerve or vessel pass through bone.</p><table class="dtable"><caption>The opening, the bone, and what passes through</caption><thead><tr><th scope="col">Foramen</th><th scope="col">Bone</th><th scope="col">What passes</th></tr></thead><tbody><tr><th scope="row">Foramen magnum</th><td>Occipital</td><td>Spinal cord, vertebral arteries.</td></tr><tr><th scope="row">Optic canal</th><td>Sphenoid</td><td>Optic nerve (CN II).</td></tr><tr><th scope="row">Superior orbital fissure</th><td>Sphenoid</td><td>Nerves that supply and move the eye.</td></tr><tr><th scope="row">Foramen ovale</th><td>Sphenoid</td><td>A branch of the trigeminal nerve to the lower jaw.</td></tr><tr><th scope="row">Cribriform foramina</th><td>Ethmoid</td><td>Olfactory nerve filaments (CN I).</td></tr><tr><th scope="row">Internal acoustic meatus</th><td>Temporal</td><td>Nerves for hearing and facial movement.</td></tr><tr><th scope="row">Carotid canal</th><td>Temporal</td><td>The internal carotid artery.</td></tr><tr><th scope="row">Jugular foramen</th><td>Temporal + occipital</td><td>The internal jugular vein.</td></tr><tr><th scope="row">Mental foramen</th><td>Mandible</td><td>The nerve and vessels to the chin and lip.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Skull clinical notes">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Clinical</p><h2 class="slide-title">Where the skull is thin, and its one big door</h2></div><div class="slide-meta">Clinical</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>The <strong>pterion</strong> is the thinnest part of the skull, and the middle meningeal artery runs just beneath it. A blow there can tear the artery and bleed into the skull.</li><li>The paranasal sinuses drain into the nasal cavity, so a head cold can spread as <strong>sinusitis</strong>; the maxillary sinus sits so close to the upper teeth that a tooth infection can reach it.</li><li>A newborn is checked at the anterior fontanelle: <strong>sunken</strong> can signal dehydration, <strong>bulging</strong> can signal raised intracranial pressure.</li><li>The <strong>foramen magnum</strong> is the one large door between brain and cord; rising pressure can force brain tissue down through it, an emergency.</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 2 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 2</p><h2>The Vertebral Column</h2><p>The central supporting axis: its regions, its curvatures, and a typical vertebra.</p></div></div></section>
+
+<section class="slide " aria-label="The vertebral column, an overview">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Overview</p><h2 class="slide-title">The vertebral column, an overview</h2></div><div class="slide-meta">Spine</div></header>
+<div class="slide-body"><p class="lead-in">From 33 vertebrae early in development to <strong>26 bones</strong> in the adult: 24 separate vertebrae in three regions, plus the fused sacrum and coccyx.</p><table class="dtable"><caption>Five regions, superior to inferior</caption><thead><tr><th scope="col">Region</th><th scope="col">Vertebrae</th><th scope="col">Description</th></tr></thead><tbody><tr><th scope="row">Cervical</th><td>7 (C1&ndash;C7)</td><td>The neck.</td></tr><tr><th scope="row">Thoracic</th><td>12 (T1&ndash;T12)</td><td>The chest; each articulates with a pair of ribs.</td></tr><tr><th scope="row">Lumbar</th><td>5 (L1&ndash;L5)</td><td>The lower back.</td></tr><tr><th scope="row">Sacrum</th><td>5, fused</td><td>A triangular bone wedged between the hip bones.</td></tr><tr><th scope="row">Coccyx</th><td>4, fused</td><td>The tailbone.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="The curvatures of the spine">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Curvatures</p><h2 class="slide-title">The four curvatures</h2></div><div class="slide-meta">Spine</div></header>
+<div class="slide-body"><div class="split"><div class="slide-content"><p class="lead-in">Four front-to-back curves act like a spring. <strong>Primary</strong> curves are present at birth; <strong>secondary</strong> curves develop with infancy's milestones.</p><ul><li><strong>Cervical</strong>: secondary, develops as the infant holds up its head.</li><li><strong>Thoracic</strong>: primary, present from birth.</li><li><strong>Lumbar</strong>: secondary, develops as the child stands and walks.</li><li><strong>Sacral</strong>: primary, present from birth.</li></ul></div><div class="figcol"><svg class="figsvg" viewBox="0 0 260 360" role="img" aria-labelledby="spT spD" style="max-width:240px"><title id="spT">The four spinal curvatures</title><desc id="spD">From top to bottom the spine curves forward at the neck (cervical), back at the chest (thoracic), forward at the lower back (lumbar), and back at the sacrum.</desc>
+<path d="M118 20 C92 50 92 80 112 110 C134 142 134 196 104 230 C84 254 84 286 108 320" fill="none" stroke="#0B1530" stroke-width="10" stroke-linecap="round"/>
+<g stroke="#7a8190" stroke-width="1.5"><path d="M150 60 L108 64"/><path d="M150 150 L126 150"/><path d="M150 232 L110 226"/><path d="M150 310 L106 312"/></g>
+<g fill="#0B1530" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700"><text x="154" y="64">Cervical</text><text x="154" y="154">Thoracic</text><text x="154" y="236">Lumbar</text><text x="154" y="314">Sacral</text></g>
+<g fill="#8B3A2E" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700"><text x="154" y="78">secondary</text><text x="154" y="168">primary</text><text x="154" y="250">secondary</text><text x="154" y="328">primary</text></g></svg><p class="figcap"><strong>A spring.</strong> Abnormal: scoliosis (sideways), kyphosis (thoracic), lordosis (lumbar).</p></div></div></div></section>
+
+<section class="slide " aria-label="A typical vertebra">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; A vertebra</p><h2 class="slide-title">A typical vertebra</h2></div><div class="slide-meta">Spine</div></header>
+<div class="slide-body"><div class="slide-tools"><button type="button" class="pill" id="vertPillBtn" aria-haspopup="dialog" title="Open a labeled vertebra to point at while you teach"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="5" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 14 v7 M7 21 h10" stroke="#fff" stroke-width="2"/></svg>Pull up the vertebra</button></div>
+<table class="dtable"><caption>The parts, and the disc between</caption><thead><tr><th scope="col">Part</th><th scope="col">What it is</th></tr></thead><tbody><tr><th scope="row">Body (centrum)</th><td>The thick, weight-bearing anterior portion.</td></tr><tr><th scope="row">Vertebral arch</th><td>The bony ring from the back of the body; its <strong>pedicles</strong> connect to the body and its <strong>laminae</strong> complete it behind.</td></tr><tr><th scope="row">Vertebral foramen</th><td>The opening enclosed by body and arch; the spinal cord runs through it.</td></tr><tr><th scope="row">Spinous &amp; transverse processes</th><td>One spinous process points back; two transverse processes point laterally.</td></tr><tr><th scope="row">Articular processes</th><td>Superior and inferior pairs that join one vertebra to the next.</td></tr><tr><th scope="row">Intervertebral disc</th><td>A fibrocartilage pad: a tough outer <strong>anulus fibrosus</strong> around a gel-like <strong>nucleus pulposus</strong>.</td></tr><tr><th scope="row">Intervertebral foramina</th><td>The gaps between stacked vertebrae where the spinal nerves exit.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="The regional vertebrae">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Regions</p><h2 class="slide-title">Telling the regions apart</h2></div><div class="slide-meta">Spine</div></header>
+<div class="slide-body"><table class="dtable"><caption>One feature identifies each</caption><thead><tr><th scope="col">Region</th><th scope="col">Body</th><th scope="col">Distinctive feature</th></tr></thead><tbody><tr><th scope="row">Cervical (C1&ndash;C7)</th><td>Small, oval; spinous often bifid.</td><td><strong>Transverse foramina</strong> pass the vertebral arteries.</td></tr><tr><th scope="row">Thoracic (T1&ndash;T12)</th><td>Heart-shaped; spinous long, angled down.</td><td><strong>Costal facets</strong> where the ribs articulate.</td></tr><tr><th scope="row">Lumbar (L1&ndash;L5)</th><td>Thick, kidney-shaped, largest.</td><td>Massive build; no costal facets, no transverse foramina.</td></tr></tbody></table><div class="takeaway"><strong>Atlas (C1)</strong>: a ring with no body, holds up the skull (the &ldquo;yes&rdquo; nod at the atlanto-occipital joint). <strong>Axis (C2)</strong>: bears the <strong>dens</strong>, the peg the atlas pivots around for the &ldquo;no&rdquo; rotation. <strong>C7</strong> is the vertebra prominens.</div></div></section>
+
+<section class="slide " aria-label="The sacrum and coccyx">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Sacrum</p><h2 class="slide-title">The sacrum and coccyx</h2></div><div class="slide-meta">Spine</div></header>
+<div class="slide-body"><table class="dtable"><caption>The fused base of the column</caption><thead><tr><th scope="col">Structure</th><th scope="col">What it is</th></tr></thead><tbody><tr><th scope="row">Sacrum</th><td>Five fused vertebrae forming a triangular bone wedged between the hip bones.</td></tr><tr><th scope="row">Sacral promontory</th><td>The anterior ridge of the first sacral vertebra.</td></tr><tr><th scope="row">Median sacral crest</th><td>The fused spinous processes on the posterior surface.</td></tr><tr><th scope="row">Sacral canal &amp; hiatus</th><td>The vertebral canal's continuation; the hiatus is its inferior opening.</td></tr><tr><th scope="row">Auricular surface</th><td>The ear-shaped surface that joins the hip bone at the sacroiliac joint.</td></tr><tr><th scope="row">Coccyx</th><td>The fused tailbone, an attachment for pelvic ligaments and muscles.</td></tr></tbody></table></div></section>
+
+<section class="slide divider" aria-label="Part 3 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 3</p><h2>The Thoracic Cage</h2><p>The sternum in front, the ribs on the sides, the thoracic vertebrae behind: a shield for the heart and lungs.</p></div></div></section>
+
+<section class="slide " aria-label="The sternum">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Sternum</p><h2 class="slide-title">The sternum</h2></div><div class="slide-meta">Cage</div></header>
+<div class="slide-body"><table class="dtable"><caption>The breastbone, three fused parts plus landmarks</caption><thead><tr><th scope="col">Part</th><th scope="col">What it is</th></tr></thead><tbody><tr><th scope="row">Manubrium</th><td>The superior part; articulates with the clavicles and the first ribs.</td></tr><tr><th scope="row">Body</th><td>The long middle part.</td></tr><tr><th scope="row">Xiphoid process</th><td>The small inferior tip, cartilage that ossifies with age; a muscle attachment.</td></tr><tr><th scope="row">Jugular notch</th><td>The central dip at the top of the manubrium, easily felt.</td></tr><tr><th scope="row">Sternal angle</th><td>The ridge where the manubrium meets the body, level with the <strong>second rib</strong>, the landmark for counting ribs.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="The ribs">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Ribs</p><h2 class="slide-title">The ribs</h2></div><div class="slide-meta">Cage</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Twelve pairs of flat, curved bones. The <strong>head</strong> articulates with the vertebral bodies; the <strong>tubercle</strong> with a transverse process; the <strong>costal cartilage</strong> (hyaline) connects a rib toward the sternum.</li></ul></div><div class="figrow">
+<div class="figcard"><svg viewBox="0 0 150 96" role="img" aria-label="True ribs attach directly to the sternum"><rect x="68" y="14" width="14" height="68" rx="6" fill="#0B1530"/><g fill="none" stroke="#0B1530" stroke-width="4" stroke-linecap="round"><path d="M68 30 q-40 4 -52 28"/><path d="M68 48 q-40 4 -52 28"/></g><g stroke="#C9A14A" stroke-width="4" stroke-linecap="round"><path d="M68 30 q-12 2 -18 12"/><path d="M68 48 q-12 2 -18 12"/></g></svg><p class="fl">True ribs (1&ndash;7)</p><p class="fs">own cartilage to sternum</p></div>
+<div class="figcard"><svg viewBox="0 0 150 96" role="img" aria-label="False ribs join the cartilage of the rib above"><rect x="68" y="14" width="14" height="68" rx="6" fill="#0B1530"/><g fill="none" stroke="#0B1530" stroke-width="4" stroke-linecap="round"><path d="M30 40 q-12 6 -16 18"/><path d="M30 58 q-12 6 -16 18"/></g><g stroke="#C9A14A" stroke-width="4" stroke-linecap="round" fill="none"><path d="M30 40 q18 4 22 -6"/><path d="M30 58 q18 4 26 -14"/></g></svg><p class="fl">False ribs (8&ndash;12)</p><p class="fs">join cartilage above</p></div>
+<div class="figcard"><svg viewBox="0 0 150 96" role="img" aria-label="Floating ribs have no anterior attachment"><rect x="118" y="14" width="12" height="68" rx="6" fill="#9aa3ad"/><g fill="none" stroke="#0B1530" stroke-width="4" stroke-linecap="round"><path d="M70 52 q-30 2 -44 20"/><path d="M74 70 q-28 2 -40 16"/></g></svg><p class="fl">Floating ribs (11&ndash;12)</p><p class="fs">no anterior attachment</p></div>
+</div></div></section>
+
+<section class="slide " aria-label="Spine and cage clinical notes">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Clinical</p><h2 class="slide-title">A cord inside, a pump behind</h2></div><div class="slide-meta">Clinical</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>A <strong>herniated disc</strong>: the soft nucleus pulposus pushes through a torn anulus fibrosus and presses on a spinal nerve at an intervertebral foramen, so the pain travels down a limb.</li><li>The <strong>dens</strong> is held against the atlas by a ligament; a sharp blow can fracture it, a serious injury so close to the brainstem.</li><li>The <strong>sternal angle</strong> sits at the second rib, the start for counting ribs; the <strong>xiphoid process</strong> guides hand position for CPR.</li><li>Abnormal curves: <strong>scoliosis</strong> (sideways), <strong>kyphosis</strong> (thoracic), <strong>lordosis</strong> (lumbar).</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 4 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 4</p><h2>Check Your Understanding</h2><p>From recall to reasoning, then the takeaways and your study questions.</p></div></div></section>
+
+<section class="slide " aria-label="Recall, name the bone">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Recall (DOK 1)</p><h2 class="slide-title">Name the structure</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 1 &middot; Recall</p><p class="prompt2">Which large opening transmits the spinal cord?</p><div class="choices"><button type="button" class="choice" data-correct="false">Optic canal</button><button type="button" class="choice" data-correct="true">Foramen magnum</button><button type="button" class="choice" data-correct="false">Jugular foramen</button><button type="button" class="choice" data-correct="false">Mental foramen</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>The foramen magnum</strong> of the occipital bone. It also passes the vertebral arteries and the spinal accessory nerve (CN XI).</p></div></div></div></section>
+
+<section class="slide " aria-label="Apply the term">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Skill / concept (DOK 2)</p><h2 class="slide-title">Identify the region</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 2 &middot; Skill / concept</p><p class="prompt2">A vertebra with <em>transverse foramina</em> is from which region?</p><div class="choices"><button type="button" class="choice" data-correct="true">Cervical</button><button type="button" class="choice" data-correct="false">Thoracic</button><button type="button" class="choice" data-correct="false">Lumbar</button><button type="button" class="choice" data-correct="false">Sacral</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>Cervical.</strong> Transverse foramina pass the vertebral arteries. Thoracic vertebrae have costal facets; lumbar are massive with neither.</p></div></div></div></section>
+
+<section class="slide " aria-label="Reason it through">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Strategic reasoning (DOK 3)</p><h2 class="slide-title">Reason it through</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 3 &middot; Strategic reasoning</p><p class="prompt2">Why does a herniated lumbar disc often cause pain that travels down the leg?</p><div class="choices"><button type="button" class="choice" data-correct="true">The nucleus pulposus presses on a spinal nerve as it exits the intervertebral foramen.</button><button type="button" class="choice" data-correct="false">The vertebral body fractures and pinches the spinal cord directly.</button><button type="button" class="choice" data-correct="false">The costal facets dislocate and irritate a rib nerve.</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>Nerve compression at the foramen.</strong> The soft nucleus pulposus pushes through the torn anulus fibrosus and presses the spinal nerve where it exits, so the pain follows that nerve down the limb.</p></div></div></div></section>
+
+<section class="slide " aria-label="Key takeaways">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Wrap-up</p><h2 class="slide-title">Key takeaways</h2></div><div class="slide-meta">Summary</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>The skull is <strong>22 bones</strong>: 8 cranial (frontal, parietal &times;2, temporal &times;2, occipital, sphenoid, ethmoid) and 14 facial; the hyoid is counted separately.</li><li>Four sutures (coronal, sagittal, lambdoid, squamous) plus the thin <strong>pterion</strong>; four fontanelles in the infant.</li><li>The column is <strong>26 bones</strong> in five regions, with four curvatures (two primary, two secondary).</li><li>A vertebra = <strong>body + arch</strong> (pedicles, laminae) around the vertebral foramen, with spinous, transverse, and articular processes; discs are anulus + nucleus pulposus.</li><li>The cage = sternum (manubrium, body, xiphoid) + ribs (true 1&ndash;7, false 8&ndash;12, floating 11&ndash;12); the <strong>sternal angle</strong> marks rib 2.</li></ul></div></div></section>
+
+<section class="slide " aria-label="Study questions">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Given, not Googled</p><h2 class="slide-title">Study questions</h2></div><div class="slide-meta">Synthesis</div></header>
+<div class="slide-body"><div class="slide-content"><p class="lead-in">Answer these in writing, in your own words. Bring them to class; they are the reasoning the exams ask for.</p><ul><li>Name the eight cranial bones and contrast their job with that of the facial bones.</li><li>Trace the four major sutures and name the bones each one joins.</li><li>Name the five regions of the vertebral column and how many vertebrae are in each.</li><li>Explain how the ribs attach anteriorly, and how that distinguishes true, false, and floating ribs.</li></ul></div></div></section>
+
+</main>
+<p class="foot">Dr. Sharilyn Rennie &middot; Majors &middot; Human Anatomy &middot; The Axial Skeleton. Need a PDF? Use Print / Save PDF above, or download the accessible PDF from Canvas.</p>
+<div class="present-bar"><button type="button" class="prev" aria-label="Previous slide">&#8249;</button><span class="count" id="presentCount">1 / 1</span><button type="button" class="next" aria-label="Next slide">&#8250;</button><button type="button" class="exit">Exit</button></div>
+<script>
+(function(){document.querySelectorAll('.deck .slide').forEach(function(s,i){var n=s.querySelector('.slide-num');if(n)n.textContent=(i<10?'0':'')+i;});})();
+(function(){document.querySelectorAll('.decision').forEach(function(g){var r=g.querySelector('.reveal');g.querySelectorAll('.choice').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('.choice').forEach(function(x){x.classList.remove('right','wrong');x.classList.add(x.getAttribute('data-correct')==='true'?'right':'wrong');});if(r)r.hidden=false;});});});})();
+(function(){var pr=document.getElementById('printBtn');if(pr)pr.addEventListener('click',function(){window.print();});})();
+(function(){var slides=[].slice.call(document.querySelectorAll('.deck .slide'));if(!slides.length)return;var idx=0,on=false;var bar=document.querySelector('.present-bar'),countEl=document.getElementById('presentCount');var prev=bar.querySelector('.prev'),next=bar.querySelector('.next'),exitB=bar.querySelector('.exit');
+function show(i){idx=Math.max(0,Math.min(slides.length-1,i));slides.forEach(function(s,k){s.classList.toggle('is-current',k===idx);});countEl.textContent=(idx+1)+' / '+slides.length;prev.disabled=idx===0;next.disabled=idx===slides.length-1;}
+function enter(i){on=true;document.body.classList.add('present');show(i||0);if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(function(){});}
+function exit(){on=false;document.body.classList.remove('present');slides.forEach(function(s){s.classList.remove('is-current');});if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(function(){});}
+var pb=document.getElementById('presentBtn');if(pb)pb.addEventListener('click',function(){enter(0);});
+prev.addEventListener('click',function(){show(idx-1);});next.addEventListener('click',function(){show(idx+1);});exitB.addEventListener('click',exit);
+document.addEventListener('keydown',function(e){if(!on)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(idx+1);}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(idx-1);}else if(e.key==='Escape'){exit();}});
+document.addEventListener('fullscreenchange',function(){if(!document.fullscreenElement&&on)exit();});
+})();
+</script>
+<div class="lightbox" id="lightbox" hidden><img class="lb-img" src="" alt=""><button type="button" class="lb-close" aria-label="Close enlarged image">&times;</button></div>
+<script>
+(function(){var lb=document.getElementById('lightbox');if(!lb)return;var img=lb.querySelector('.lb-img');var cb=lb.querySelector('.lb-close');
+document.querySelectorAll('.slidefig').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();img.src=el.currentSrc||el.src;img.alt=el.alt||'';lb.hidden=false;});});
+function close(){lb.hidden=true;img.removeAttribute('src');}
+lb.addEventListener('click',function(e){if(e.target!==img)close();});
+cb.addEventListener('click',function(e){e.stopPropagation();close();});
+document.addEventListener('keydown',function(e){if(!lb.hidden&&e.key==='Escape')close();});})();
+</script>
+<script>(function(){var b=document.getElementById("backBtn");if(!b)return;if(document.referrer||window.history.length>1){b.hidden=false;}b.addEventListener("click",function(){if(history.length>1)history.back();else if(document.referrer)location.href=document.referrer;});})();</script>
+<div class="imgmodal" id="skullModal" hidden role="dialog" aria-modal="true" aria-label="Labeled lateral skull diagram"><div class="imgmodal-card"><button type="button" class="imgmodal-close" aria-label="Close the skull diagram">&times;</button><p class="mh">The skull, lateral view, labeled</p>
+<svg class="nrn" viewBox="0 0 700 460" role="img" aria-labelledby="skT skD" style="max-width:640px"><title id="skT">A labeled lateral skull</title><desc id="skD">A left lateral skull, stylized. The cranial vault is formed by the frontal, parietal, temporal, and occipital bones with the sphenoid deep behind the orbit. The face is built from the zygomatic, maxilla, and mandible. The coronal, squamous, and lambdoid sutures and the ear opening are marked.</desc>
+<path d="M200 118 C168 150 158 198 168 232 L166 256 L250 272 L312 264 L334 250 C374 250 432 236 460 200 C486 168 480 116 426 98 C366 76 256 74 222 98 C210 106 204 110 200 118 Z" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/>
+<path d="M168 262 L168 296 L312 308 L342 256 L322 252 L300 290 L182 278 Z" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/>
+<circle cx="208" cy="196" r="30" fill="#cdd7df" stroke="#0B1530" stroke-width="2"/>
+<path d="M186 222 L208 222 L197 250 Z" fill="#cdd7df" stroke="#0B1530" stroke-width="1.5"/>
+<path d="M258 214 Q300 200 344 210" fill="none" stroke="#0B1530" stroke-width="7"/>
+<circle cx="360" cy="222" r="12" fill="#0B1530"/>
+<path d="M352 234 L370 234 L361 256 Z" fill="#0B1530"/>
+<path d="M262 92 Q250 150 258 200" fill="none" stroke="#0B1530" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M280 188 Q346 158 408 192" fill="none" stroke="#0B1530" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M436 108 Q452 168 430 216" fill="none" stroke="#0B1530" stroke-width="2" stroke-dasharray="6 4"/>
+<g stroke="#7a8190" stroke-width="1.5" fill="none"><path d="M120 110 L210 120"/><path d="M250 36 L262 92"/><path d="M360 40 L350 86"/><path d="M548 124 L436 130"/><path d="M548 184 L452 192"/><path d="M548 254 L392 186"/><path d="M548 324 L362 224"/><path d="M120 300 L205 200"/><path d="M120 360 L210 252"/><path d="M120 410 L235 292"/><path d="M436 360 L362 236"/></g>
+<g fill="#0B1530" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700"><text x="116" y="114" text-anchor="end">Frontal bone</text><text x="250" y="32" text-anchor="middle">Coronal suture</text><text x="360" y="36" text-anchor="middle">Parietal bone</text><text x="556" y="128">Lambdoid suture</text><text x="556" y="188">Occipital bone</text><text x="556" y="258">Squamous suture</text><text x="556" y="328">Temporal bone</text><text x="116" y="304" text-anchor="end">Sphenoid bone</text><text x="116" y="364" text-anchor="end">Maxilla</text><text x="116" y="414" text-anchor="end">Mandible</text><text x="436" y="378" text-anchor="middle">External acoustic meatus</text></g></svg>
+<p class="imgmodal-cap">A stylized lateral skull for pointing. The four vault bones (frontal, parietal, temporal, occipital) enclose the brain; the sphenoid sits deep behind the orbit; the face is zygomatic, maxilla, and mandible. Press Esc or tap outside to close.</p></div></div>
+<script>(function(){var btn=document.getElementById('skullPillBtn'),m=document.getElementById('skullModal');if(!btn||!m)return;var closeB=m.querySelector('.imgmodal-close'),last=null;
+function open(){last=document.activeElement;m.hidden=false;closeB.focus();}
+function close(){m.hidden=true;if(last&&last.focus)last.focus();}
+btn.addEventListener('click',open);closeB.addEventListener('click',close);
+m.addEventListener('click',function(e){if(e.target===m)close();});
+document.addEventListener('keydown',function(e){if(!m.hidden&&e.key==='Escape')close();});})();</script>
+<div class="imgmodal" id="vertModal" hidden role="dialog" aria-modal="true" aria-label="Labeled vertebra diagram"><div class="imgmodal-card"><button type="button" class="imgmodal-close" aria-label="Close the vertebra diagram">&times;</button><p class="mh">A typical vertebra, superior view, labeled</p>
+<svg class="nrn" viewBox="0 0 620 410" role="img" aria-labelledby="vbT vbD" style="max-width:600px"><title id="vbT">A typical vertebra from above</title><desc id="vbD">Seen from above with the body at the top (anterior). The body and arch enclose the vertebral foramen. Pedicles connect the body to the arch, laminae complete it behind, transverse processes point sideways, the spinous process points back, and the articular processes sit on top.</desc>
+<g transform="translate(70,0)">
+<circle cx="240" cy="210" r="64" fill="#fff" stroke="#0B1530" stroke-width="3"/>
+<ellipse cx="240" cy="96" rx="96" ry="50" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/>
+<path d="M168 128 L196 176" stroke="#0B1530" stroke-width="15" stroke-linecap="round"/>
+<path d="M312 128 L284 176" stroke="#0B1530" stroke-width="15" stroke-linecap="round"/>
+<ellipse cx="110" cy="206" rx="40" ry="16" fill="#EDF1F3" stroke="#0B1530" stroke-width="2.5"/>
+<ellipse cx="370" cy="206" rx="40" ry="16" fill="#EDF1F3" stroke="#0B1530" stroke-width="2.5"/>
+<ellipse cx="186" cy="158" rx="16" ry="11" fill="#cdd7df" stroke="#0B1530" stroke-width="2"/>
+<ellipse cx="294" cy="158" rx="16" ry="11" fill="#cdd7df" stroke="#0B1530" stroke-width="2"/>
+<path d="M200 258 L228 296" stroke="#0B1530" stroke-width="12" stroke-linecap="round"/>
+<path d="M280 258 L252 296" stroke="#0B1530" stroke-width="12" stroke-linecap="round"/>
+<path d="M222 288 L258 288 L248 354 L232 354 Z" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/>
+</g>
+<g stroke="#7a8190" stroke-width="1.5" fill="none"><path d="M180 36 L256 152"/><path d="M430 36 L322 52"/><path d="M134 196 L250 168"/><path d="M498 204 L350 256"/><path d="M140 378 L152 214"/><path d="M320 378 L316 356"/><path d="M505 378 L360 215"/></g>
+<g fill="#0B1530" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700"><text x="160" y="30" text-anchor="middle">Superior articular process</text><text x="440" y="30" text-anchor="middle">Body (centrum)</text><text x="130" y="200" text-anchor="end">Pedicle</text><text x="500" y="200">Lamina</text><text x="140" y="392" text-anchor="middle">Transverse process</text><text x="320" y="392" text-anchor="middle">Spinous process</text><text x="505" y="392" text-anchor="middle">Vertebral foramen</text></g></svg>
+<p class="imgmodal-cap">The body bears weight at the front; the arch rings the vertebral foramen for the spinal cord; processes are levers for muscles and joints. Press Esc or tap outside to close.</p></div></div>
+<script>(function(){var btn=document.getElementById('vertPillBtn'),m=document.getElementById('vertModal');if(!btn||!m)return;var closeB=m.querySelector('.imgmodal-close'),last=null;
+function open(){last=document.activeElement;m.hidden=false;closeB.focus();}
+function close(){m.hidden=true;if(last&&last.focus)last.focus();}
+btn.addEventListener('click',open);closeB.addEventListener('click',close);
+m.addEventListener('click',function(e){if(e.target===m)close();});
+document.addEventListener('keydown',function(e){if(!m.hidden&&e.key==='Escape')close();});})();</script>
+<script>
+/* iframe height-sender: posts this page's height to a parent frame on load and on resize */
+(function(){function h(){var d=document,b=d.body,e=d.documentElement;return Math.max(b.scrollHeight,b.offsetHeight,e.clientHeight,e.scrollHeight,e.offsetHeight);}
+function send(){try{parent.postMessage({type:"setHeight",id:"axial-skeleton",height:h()},"*");}catch(x){}}
+window.addEventListener("load",send);window.addEventListener("resize",send);
+if(window.ResizeObserver){try{new ResizeObserver(send).observe(document.body);}catch(x){}}})();
+</script>
+</body></html>
