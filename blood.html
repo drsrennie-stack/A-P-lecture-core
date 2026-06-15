@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blood · Human Anatomy · Dr. Sharilyn Rennie</title>
+<style>
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,Arial,sans-serif;background:#FAFAF9;color:#060A18;font-size:16px;line-height:1.5}
+button{font-family:inherit} a{color:#8B3A2E}
+:focus-visible{outline:3px solid #8B3A2E;outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;position:fixed;background:#060A18;color:#fff;padding:10px 14px;border-radius:4px;z-index:80}
+.site-header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px max(16px,3vw);background:#fff;border-bottom:1px solid rgba(11,21,48,.14)}
+.site-header .id{flex:1;min-width:240px;display:flex;align-items:center;gap:14px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#8B3A2E;display:block;margin-bottom:2px}
+.site-header h1{font-size:18px;font-weight:800;margin:0;color:#0B1530}
+.site-header h1 .ac{color:#8B3A2E}
+.btn{font-weight:700;font-size:13px;letter-spacing:.04em;border:1px solid #060A18;background:#060A18;color:#fff;padding:10px 16px;border-radius:6px;cursor:pointer}
+.btn:hover{background:#16213d}
+.deck{max-width:1180px;margin:0 auto;padding:24px max(16px,3vw) 40px}
+.slide{background:#fff;border:1px solid rgba(11,21,48,.14);border-radius:12px;box-shadow:0 1px 3px rgba(11,21,48,.06);margin-bottom:22px;overflow:hidden}
+.slide-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:15px 20px;background:#FAFAF9;border-bottom:1px solid rgba(11,21,48,.14)}
+.slide-num{font-size:28px;font-weight:800;color:#8B3A2E;min-width:46px}
+.slide-eyebrow{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#060A18;opacity:.6;margin:0 0 3px}
+.slide-title{font-size:clamp(18px,2.2vw,24px);font-weight:800;margin:0}
+.slide-meta{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8B3A2E}
+.slide-body{padding:22px}
+.lead-in{font-size:17px;font-weight:600;margin:0 0 14px}
+.slide-content h3{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8B3A2E;margin:0 0 14px}
+.slide-content ul{margin:0;padding:0;list-style:none}
+.slide-content li{font-size:15.5px;line-height:1.5;padding:5px 0 5px 18px;position:relative}
+.slide-content li::before{content:"";position:absolute;left:2px;top:12px;width:7px;height:7px;background:#8B3A2E;border-radius:50%}
+.slide-content li strong{font-weight:800}
+.split{display:grid;grid-template-columns:minmax(260px,1fr) minmax(280px,1.05fr);gap:22px;align-items:center}
+.takeaway{margin-top:16px;padding:14px 16px;background:#FAFAF9;border-left:3px solid #8B3A2E;border-radius:6px;font-size:15px}
+.takeaway strong{color:#8B3A2E}
+.figcol{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0}
+.slidefig{width:100%;height:auto;max-width:620px;border-radius:8px;background:#fff;cursor:zoom-in}
+.figcap{font-size:12.5px;color:#060A18;opacity:.78;text-align:center;margin:8px 0 0}
+.figcap strong{color:#8B3A2E;opacity:1}
+.divider .slide-header{display:none}
+.divider .slide-body{padding:0}
+.divhero{background:#060A18;color:#fff;padding:9vh 6vw;min-height:46vh;display:flex;flex-direction:column;justify-content:center}
+.divhero .dn{font-size:13px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#DCB45C;margin:0 0 10px}
+.divhero h2{font-size:clamp(26px,4vw,46px);font-weight:800;margin:0 0 10px;line-height:1.06}
+.divhero p{font-size:clamp(15px,1.6vw,20px);opacity:.9;margin:0;max-width:64ch}
+.q{border:1px solid rgba(11,21,48,.14);border-left:4px solid #8B3A2E;background:#fff;border-radius:8px;padding:16px 18px;margin:0 0 14px}
+.q .lab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8B3A2E;margin:0 0 8px}
+.q .prompt2{font-weight:700;font-size:16px;margin:0 0 12px}
+.choices{display:flex;gap:10px;flex-wrap:wrap}
+.choice{font-weight:700;font-size:15px;border-radius:6px;cursor:pointer;border:1px solid #060A18;background:#fff;color:#060A18;padding:10px 15px}
+.choice:hover{background:#EAEEF4}
+.choice.right{background:#EAEEF4;border-color:#0B1530;color:#0B1530}
+.choice.wrong{border-color:rgba(11,21,48,.14);opacity:.55}
+.reveal{margin:12px 0 0;border:1px solid rgba(11,21,48,.14);background:#FAFAF9;border-radius:6px;padding:12px 14px}
+.reveal[hidden]{display:none}.reveal .rlab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6E5018;margin:0 0 6px}.reveal p{margin:0}
+.foot{margin:8px max(16px,3vw) 30px;font-size:12px;color:#060A18;opacity:.6;border-top:1px solid rgba(11,21,48,.14);padding-top:12px;max-width:1180px}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+body.present{overflow:hidden;background:#060A18}
+body.present .site-header,body.present .foot{display:none}
+body.present .deck{max-width:none;margin:0;padding:0}
+body.present .slide{display:none}
+body.present .slide.is-current{display:flex;flex-direction:column;position:fixed;inset:0;margin:0;border:0;border-radius:0;box-shadow:none;overflow:auto;background:#fff}
+body.present .slide.is-current .slide-body{flex:1;max-width:1280px;width:100%;margin:0 auto;padding:2.5vh 5vw;display:flex;flex-direction:column;justify-content:center}
+body.present .slide-content li{font-size:clamp(16px,1.7vw,25px);padding:7px 0 7px 26px}
+body.present .slide-content li::before{top:15px;width:9px;height:9px}
+body.present .slide-content h3{font-size:clamp(15px,1.5vw,20px)!important}
+body.present .lead-in{font-size:clamp(18px,2vw,28px)}
+body.present .slidefig{max-width:100%;max-height:70vh;width:auto;height:auto}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,10,24,.93);display:flex;align-items:center;justify-content:center;padding:3vh 3vw;cursor:zoom-out}
+.lightbox[hidden]{display:none}
+.lightbox .lb-img{max-width:96vw;max-height:94vh;width:auto;height:auto;border-radius:6px;background:#fff;cursor:default}
+.lightbox .lb-close{position:fixed;top:16px;right:20px;background:#8B3A2E;color:#fff;border:0;border-radius:8px;font-size:24px;line-height:1;width:46px;height:46px;cursor:pointer}
+body.present .q .prompt2{font-size:clamp(18px,1.8vw,25px)}
+body.present .choice{font-size:clamp(16px,1.6vw,21px);padding:13px 19px}
+body.present .reveal{font-size:clamp(15px,1.5vw,21px)}
+.present-bar{position:fixed;z-index:70;left:50%;bottom:18px;transform:translateX(-50%);display:none;align-items:center;gap:10px;background:rgba(11,21,48,.92);color:#fff;padding:8px 12px;border-radius:999px}
+body.present .present-bar{display:flex}
+.present-bar button{font-weight:700;font-size:16px;border:0;border-radius:999px;background:#8B3A2E;color:#fff;width:42px;height:42px;cursor:pointer}
+.present-bar button:disabled{background:#3a4357}.present-bar .count{font-size:13px;font-weight:700;min-width:62px;text-align:center}
+.present-bar .exit{width:auto;padding:0 14px;background:transparent;border:1px solid rgba(255,255,255,.4)}
+@media print{.site-header,.present-bar,.foot,#presentBtn{display:none}.slide{break-inside:avoid;page-break-after:always;box-shadow:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.tkey{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;align-items:start;margin-top:4px}
+.tkey .tcol{border:1px solid rgba(11,21,48,.18);border-radius:10px;overflow:hidden;background:#fff}
+.tkey .th{padding:8px 12px;font-weight:800;font-size:14px;letter-spacing:.02em}
+.tkey .th small{display:block;font-weight:600;font-size:11px;opacity:.95}
+.tkey .th.ep{background:#C9A14A;color:#0B1530}
+.tkey .th.ct{background:#8B3A2E;color:#fff}
+.tkey .th.mu{background:#0B1530;color:#fff}
+.tkey .th.ne{background:#142a36;color:#fff}
+.tkey .sub{padding:9px 12px}
+.tkey .grp{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8B3A2E;margin:9px 0 4px}
+.tkey .grp:first-child{margin-top:0}
+.tkey .it{font-size:12.5px;line-height:1.34;margin:0 0 7px;color:#1d2733}
+.tkey .it b{color:#0B1530}
+.tkey .it .tell{color:#3a4658}
+@media (max-width:760px){.tkey{grid-template-columns:1fr}}
+@media print{.tkey{grid-template-columns:repeat(2,1fr)}.tkey .tcol{break-inside:avoid}}
+.imgph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:200px;border:2px dashed #B8924A;border-radius:10px;background:#FAFAF9;color:#8B3A2E;text-align:center;padding:18px}.imgph .ph-t{font-weight:800;font-size:14px}.imgph .ph-s{font-weight:600;font-size:12px;color:#5a6573}.dtable{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}.dtable caption{text-align:left;font-weight:700;color:#8B3A2E;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.dtable th,.dtable td{border:1px solid rgba(11,21,48,.18);padding:8px 10px;text-align:left;vertical-align:top}.dtable thead th{background:#0B1530;color:#fff}.dtable tbody th{background:#FAFAF9;color:#0B1530;white-space:nowrap}.dtable tbody tr:nth-child(even) td{background:#FAFAF9}@media print{.imgph{min-height:120px}.dtable{font-size:10.5px}}
+</style></head><body>
+<a href="#deck" class="skip">Skip to slides</a>
+<header class="site-header"><div class="id"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:46px;width:auto"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#0B1530"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#0B1530"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#8B3A2E"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#8B3A2E"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg><div><span class="eyebrow">Focus: Human Anatomy</span><h1>Human <span class="ac">Anatomy</span> · Blood</h1></div></div><div class="hero-actions"><button class="btn" id="backBtn" type="button" hidden>← Back</button> <button class="btn" id="presentBtn" type="button">Present</button> <button class="btn" id="printBtn" type="button">Print / Save PDF</button></div></header>
+<main class="deck" id="deck">
+<section class="slide divider" aria-label="Title"><div class="slide-body"><div class="divhero"><div style="margin:0 0 14px"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:64px;width:auto;display:block"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#FFFFFF"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#FFFFFF"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#C2734D"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#C2734D"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg></div><p class="dn">Focus: Human Anatomy</p><h2>Blood</h2><p>Blood is the body's only liquid connective tissue: cells suspended in a fluid matrix. We cover plasma and its proteins, the formed elements (red cells, the five white cells, and platelets), where blood is made, and the disorders that follow when one component goes wrong.  Dr. Sharilyn Rennie</p></div></div></section>
+<section class="slide divider" aria-label="Part 1 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 1</p><h2>What Blood Is Made Of</h2><p>Plasma, the liquid matrix, and the formed elements suspended in it.</p></div></div></section>
+<section class="slide " aria-label="Blood, an overview">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 · Overview</p><h2 class="slide-title">Blood, an overview</h2></div><div class="slide-meta">Cardiovascular</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li><strong>Plasma</strong>: the liquid matrix, about <strong>55%</strong> of blood volume.</li><li><strong>Formed elements</strong>: the cells and fragments, about <strong>45%</strong>. The <strong>hematocrit</strong> is the percent that is red cells; the <strong>buffy coat</strong> is the thin layer of white cells and platelets in a spun sample.</li><li>Functions: <strong>transport</strong> (gases, nutrients, wastes, hormones), <strong>regulation</strong> (temperature, pH), and <strong>protection</strong> (clotting, immune defense).</li></ul></div></div></section>
+<section class="slide " aria-label="Plasma and its proteins">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 · Plasma</p><h2 class="slide-title">Plasma and its proteins</h2></div><div class="slide-meta">Cardiovascular</div></header>
+<div class="slide-body"><p class="lead-in">Plasma is about 92% water; its most abundant solutes are the plasma proteins.</p><table class="dtable"><caption>The three main plasma proteins</caption><thead><tr><th scope="col">Protein</th><th scope="col">Job</th></tr></thead><tbody><tr><th scope="row">Albumin</th><td>Most abundant; maintains the blood's osmotic pressure (pulls water back into vessels)</td></tr><tr><th scope="row">Globulins</th><td>Antibodies and transport proteins</td></tr><tr><th scope="row">Fibrinogen</th><td>The clotting protein; becomes fibrin in a clot</td></tr></tbody></table></div></section>
+<section class="slide " aria-label="Erythrocytes, built for oxygen">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 · Red cells</p><h2 class="slide-title">Erythrocytes, built for oxygen</h2></div><div class="slide-meta">Histology</div></header>
+<div class="slide-body"><div class="split"><div class="slide-content"><ul><li><strong>Biconcave disc</strong>: thinner in the center, giving a large surface for gas exchange.</li><li><strong>No nucleus</strong> and few organelles, leaving maximum room for <strong>hemoglobin</strong>, the iron protein that binds oxygen.</li><li>A <strong>flexible membrane</strong> lets it fold single-file through the narrowest capillaries.</li><li>Lifespan about <strong>120 days</strong>, then recycled by the spleen and liver.</li></ul></div><div class="figcol"><div class="imgph" role="img" aria-label="Image placeholder: blood smear / formed elements. A labeled diagram will be added here."><span class="ph-t">Picture: blood smear / formed elements</span><span class="ph-s">your labeled diagram goes here</span></div></div></div></div></section>
+<section class="slide divider" aria-label="Part 2 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 2</p><h2>Defenders, Clotters, and Failures</h2><p>The five white cells, platelets and blood formation, and the disorders.</p></div></div></section>
+<section class="slide " aria-label="The five leukocytes">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 · White cells</p><h2 class="slide-title">The five leukocytes</h2></div><div class="slide-meta">Histology</div></header>
+<div class="slide-body"><table class="dtable"><caption>Leukocytes (Never Let Monkeys Eat Bananas, most to least common)</caption><thead><tr><th scope="col">Cell</th><th scope="col">Group</th><th scope="col">Defense role</th></tr></thead><tbody><tr><th scope="row">Neutrophil</th><td>Granulocyte</td><td>First responder; engulfs and digests bacteria (most numerous)</td></tr><tr><th scope="row">Lymphocyte</th><td>Agranulocyte</td><td>The core of specific immunity (B and T cells)</td></tr><tr><th scope="row">Monocyte</th><td>Agranulocyte</td><td>Becomes a macrophage that engulfs debris and pathogens</td></tr><tr><th scope="row">Eosinophil</th><td>Granulocyte</td><td>Attacks parasites; moderates allergy</td></tr><tr><th scope="row">Basophil</th><td>Granulocyte</td><td>Releases histamine in inflammation (rarest)</td></tr></tbody></table></div></section>
+<section class="slide " aria-label="Platelets and hematopoiesis">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 · Platelets &amp; formation</p><h2 class="slide-title">Platelets and hematopoiesis</h2></div><div class="slide-meta">Histology</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li><strong>Platelets</strong> are cell fragments (pinched off from megakaryocytes) that plug breaks and start clotting.</li><li><strong>Hematopoiesis</strong>: all formed elements arise in the <strong>red bone marrow</strong> from a single type of stem cell, which divides down separate lines into red cells, white cells, and platelets.</li></ul></div></div></section>
+<section class="slide " aria-label="Common blood disorders">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 · Disorders</p><h2 class="slide-title">Common blood disorders</h2></div><div class="slide-meta">Clinical</div></header>
+<div class="slide-body"><table class="dtable"><caption>By the component affected</caption><thead><tr><th scope="col">Disorder</th><th scope="col">Component</th><th scope="col">What it is</th></tr></thead><tbody><tr><th scope="row">Anemia</th><td>Red cells</td><td>Too few red cells or too little hemoglobin; less oxygen carried</td></tr><tr><th scope="row">Sickle cell disease</th><td>Hemoglobin</td><td>Abnormal hemoglobin sickles the cells, which jam capillaries</td></tr><tr><th scope="row">Polycythemia</th><td>Red cells</td><td>Too many red cells thicken the blood</td></tr><tr><th scope="row">Leukemia</th><td>White cells</td><td>Cancer of white-cell formation crowds the marrow</td></tr><tr><th scope="row">Thrombocytopenia</th><td>Platelets</td><td>Too few platelets; bleeding risk</td></tr><tr><th scope="row">Hemophilia</th><td>Clotting proteins</td><td>Inherited clotting-factor deficiency; clots too slowly</td></tr></tbody></table><div class="takeaway">One tube of blood is a status report: spin it for the <strong>hematocrit</strong>, or run a <strong>complete blood count</strong> to tally each element.</div></div></section>
+<section class="slide divider" aria-label="Part 3 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 3</p><h2>Check Your Understanding</h2><p>From recall to reasoning, then the key takeaways.</p></div></div></section>
+<section class="slide " aria-label="Name the cell">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 · Recall (DOK 1)</p><h2 class="slide-title">Name the cell</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 1 · Recall</p><p class="prompt2">Which leukocyte is the most numerous and the first responder to a bacterial infection?</p><div class="choices"><button type="button" class="choice" data-correct="false">Lymphocyte</button><button type="button" class="choice" data-correct="true">Neutrophil</button><button type="button" class="choice" data-correct="false">Basophil</button><button type="button" class="choice" data-correct="false">Monocyte</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>Neutrophil.</strong> It is the most common white cell and the first to engulf bacteria.</p></div></div></div></section>
+<section class="slide " aria-label="Apply the structure">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 · Skill / concept (DOK 2)</p><h2 class="slide-title">Apply the structure</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 2 · Skill / concept</p><p class="prompt2">Why does a mature red blood cell eject its nucleus and most organelles?</p><div class="choices"><button type="button" class="choice" data-correct="true">To leave maximum room for hemoglobin so it can carry more oxygen.</button><button type="button" class="choice" data-correct="false">So it can divide faster in the bloodstream.</button><button type="button" class="choice" data-correct="false">So it can produce its own clotting factors.</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>To hold more hemoglobin.</strong> Losing the nucleus and organelles maximizes oxygen-carrying capacity.</p></div></div></div></section>
+<section class="slide " aria-label="Reason it through">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 · Strategic reasoning (DOK 3)</p><h2 class="slide-title">Reason it through</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 3 · Strategic reasoning</p><p class="prompt2">In sickle cell disease, why does a single abnormal hemoglobin cause capillary blockages and pain?</p><div class="choices"><button type="button" class="choice" data-correct="true">The abnormal hemoglobin stiffens and curves the red cell so it cannot fold through a capillary and jams it.</button><button type="button" class="choice" data-correct="false">It makes the cell produce too many nuclei, enlarging it.</button><button type="button" class="choice" data-correct="false">It thins the blood so flow becomes turbulent.</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>The cell becomes rigid and sickle-shaped.</strong> It loses the flexibility to squeeze through capillaries, so it lodges and blocks flow, causing pain crises.</p></div></div></div></section>
+<section class="slide " aria-label="Key takeaways">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Wrap-up</p><h2 class="slide-title">Key takeaways</h2></div><div class="slide-meta">Summary</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Blood = <strong>plasma</strong> (55%) + <strong>formed elements</strong> (45%); it is a fluid connective tissue.</li><li>Plasma proteins: <strong>albumin</strong> (osmotic pressure), <strong>globulins</strong> (antibodies), <strong>fibrinogen</strong> (clotting).</li><li>Red cells are biconcave, anucleate, hemoglobin-packed; the five white cells defend; platelets clot.</li><li>All form in <strong>red bone marrow</strong> from stem cells.</li><li>Disorders track to a component: anemia/sickle cell/polycythemia (red), leukemia (white), thrombocytopenia (platelets), hemophilia (clotting).</li></ul></div></div></section>
+</main>
+<p class="foot">Dr. Sharilyn Rennie · Focus: Human Anatomy · Blood. Need a PDF? Use Print / Save PDF above, or download the accessible PDF from Canvas.</p>
+<div class="present-bar"><button type="button" class="prev" aria-label="Previous slide">&#8249;</button><span class="count" id="presentCount">1 / 1</span><button type="button" class="next" aria-label="Next slide">&#8250;</button><button type="button" class="exit">Exit</button></div>
+<script>
+(function(){document.querySelectorAll('.deck .slide').forEach(function(s,i){var n=s.querySelector('.slide-num');if(n)n.textContent=(i<10?'0':'')+i;});})();
+(function(){document.querySelectorAll('.decision').forEach(function(g){var r=g.querySelector('.reveal');g.querySelectorAll('.choice').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('.choice').forEach(function(x){x.classList.remove('right','wrong');x.classList.add(x.getAttribute('data-correct')==='true'?'right':'wrong');});if(r)r.hidden=false;});});});})();
+(function(){var pr=document.getElementById('printBtn');if(pr)pr.addEventListener('click',function(){window.print();});})();
+(function(){var slides=[].slice.call(document.querySelectorAll('.deck .slide'));if(!slides.length)return;var idx=0,on=false;var bar=document.querySelector('.present-bar'),countEl=document.getElementById('presentCount');var prev=bar.querySelector('.prev'),next=bar.querySelector('.next'),exitB=bar.querySelector('.exit');
+function show(i){idx=Math.max(0,Math.min(slides.length-1,i));slides.forEach(function(s,k){s.classList.toggle('is-current',k===idx);});countEl.textContent=(idx+1)+' / '+slides.length;prev.disabled=idx===0;next.disabled=idx===slides.length-1;}
+function enter(i){on=true;document.body.classList.add('present');show(i||0);if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(function(){});}
+function exit(){on=false;document.body.classList.remove('present');slides.forEach(function(s){s.classList.remove('is-current');});if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(function(){});}
+var pb=document.getElementById('presentBtn');if(pb)pb.addEventListener('click',function(){enter(0);});
+prev.addEventListener('click',function(){show(idx-1);});next.addEventListener('click',function(){show(idx+1);});exitB.addEventListener('click',exit);
+document.addEventListener('keydown',function(e){if(!on)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(idx+1);}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(idx-1);}else if(e.key==='Escape'){exit();}});
+document.addEventListener('fullscreenchange',function(){if(!document.fullscreenElement&&on)exit();});
+})();
+</script>
+<div class="lightbox" id="lightbox" hidden><img class="lb-img" src="" alt=""><button type="button" class="lb-close" aria-label="Close enlarged image">&times;</button></div>
+<script>
+(function(){var lb=document.getElementById('lightbox');if(!lb)return;var img=lb.querySelector('.lb-img');var cb=lb.querySelector('.lb-close');
+document.querySelectorAll('.slidefig').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();img.src=el.currentSrc||el.src;img.alt=el.alt||'';lb.hidden=false;});});
+function close(){lb.hidden=true;img.removeAttribute('src');}
+lb.addEventListener('click',function(e){if(e.target!==img)close();});
+cb.addEventListener('click',function(e){e.stopPropagation();close();});
+document.addEventListener('keydown',function(e){if(!lb.hidden&&e.key==='Escape')close();});})();
+</script>
+<script>(function(){var b=document.getElementById("backBtn");if(!b)return;if(document.referrer||window.history.length>1){b.hidden=false;}b.addEventListener("click",function(){if(history.length>1)history.back();else if(document.referrer)location.href=document.referrer;});})();</script>
+</body></html>
