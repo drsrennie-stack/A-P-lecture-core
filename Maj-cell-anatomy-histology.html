@@ -1,0 +1,301 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Majors &middot; Anatomy of the Cell &middot; Human Anatomy &middot; Dr. Sharilyn Rennie</title>
+<style>
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,Arial,sans-serif;background:#FAFAF9;color:#060A18;font-size:16px;line-height:1.5}
+button{font-family:inherit} a{color:#8B3A2E}
+:focus-visible{outline:3px solid #8B3A2E;outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;position:fixed;background:#060A18;color:#fff;padding:10px 14px;border-radius:4px;z-index:80}
+.site-header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px max(16px,3vw);background:#fff;border-bottom:1px solid rgba(11,21,48,.14)}
+.site-header .id{flex:1;min-width:240px;display:flex;align-items:center;gap:14px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#8B3A2E;display:block;margin-bottom:2px}
+.site-header h1{font-size:18px;font-weight:800;margin:0;color:#0B1530}
+.site-header h1 .ac{color:#8B3A2E}
+.btn{font-weight:700;font-size:13px;letter-spacing:.04em;border:1px solid #060A18;background:#060A18;color:#fff;padding:10px 16px;border-radius:6px;cursor:pointer}
+.btn:hover{background:#16213d}
+.deck{max-width:1180px;margin:0 auto;padding:24px max(16px,3vw) 40px}
+.slide{background:#fff;border:1px solid rgba(11,21,48,.14);border-radius:12px;box-shadow:0 1px 3px rgba(11,21,48,.06);margin-bottom:22px;overflow:hidden}
+.slide-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:15px 20px;background:#FAFAF9;border-bottom:1px solid rgba(11,21,48,.14)}
+.slide-num{font-size:28px;font-weight:800;color:#8B3A2E;min-width:46px}
+.slide-eyebrow{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#060A18;opacity:.6;margin:0 0 3px}
+.slide-title{font-size:clamp(18px,2.2vw,24px);font-weight:800;margin:0}
+.slide-meta{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8B3A2E}
+.slide-body{padding:22px}
+.lead-in{font-size:17px;font-weight:600;margin:0 0 14px}
+.slide-content h3{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8B3A2E;margin:0 0 14px}
+.slide-content ul{margin:0;padding:0;list-style:none}
+.slide-content li{font-size:15.5px;line-height:1.5;padding:5px 0 5px 18px;position:relative}
+.slide-content li::before{content:"";position:absolute;left:2px;top:12px;width:7px;height:7px;background:#8B3A2E;border-radius:50%}
+.slide-content li strong{font-weight:800}
+.split{display:grid;grid-template-columns:minmax(260px,1fr) minmax(280px,1.05fr);gap:22px;align-items:center}
+.takeaway{margin-top:16px;padding:14px 16px;background:#FAFAF9;border-left:3px solid #8B3A2E;border-radius:6px;font-size:15px}
+.takeaway strong{color:#8B3A2E}
+.figcol{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0}
+.slidefig{width:100%;height:auto;max-width:620px;border-radius:8px;background:#fff;cursor:zoom-in}
+.figcap{font-size:12.5px;color:#060A18;opacity:.78;text-align:center;margin:8px 0 0}
+.figcap strong{color:#8B3A2E;opacity:1}
+.divider .slide-header{display:none}
+.divider .slide-body{padding:0}
+.divhero{background:#060A18;color:#fff;padding:9vh 6vw;min-height:46vh;display:flex;flex-direction:column;justify-content:center}
+.divhero .dn{font-size:13px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#DCB45C;margin:0 0 10px}
+.divhero h2{font-size:clamp(26px,4vw,46px);font-weight:800;margin:0 0 10px;line-height:1.06}
+.divhero p{font-size:clamp(15px,1.6vw,20px);opacity:.9;margin:0;max-width:64ch}
+.q{border:1px solid rgba(11,21,48,.14);border-left:4px solid #8B3A2E;background:#fff;border-radius:8px;padding:16px 18px;margin:0 0 14px}
+.q .lab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8B3A2E;margin:0 0 8px}
+.q .prompt2{font-weight:700;font-size:16px;margin:0 0 12px}
+.choices{display:flex;gap:10px;flex-wrap:wrap}
+.choice{font-weight:700;font-size:15px;border-radius:6px;cursor:pointer;border:1px solid #060A18;background:#fff;color:#060A18;padding:10px 15px}
+.choice:hover{background:#EAEEF4}
+.choice.right{background:#EAEEF4;border-color:#0B1530;color:#0B1530}
+.choice.wrong{border-color:rgba(11,21,48,.14);opacity:.55}
+.reveal{margin:12px 0 0;border:1px solid rgba(11,21,48,.14);background:#FAFAF9;border-radius:6px;padding:12px 14px}
+.reveal[hidden]{display:none}.reveal .rlab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6E5018;margin:0 0 6px}.reveal p{margin:0}
+.foot{margin:8px max(16px,3vw) 30px;font-size:12px;color:#060A18;opacity:.6;border-top:1px solid rgba(11,21,48,.14);padding-top:12px;max-width:1180px}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+body.present{overflow:hidden;background:#060A18}
+body.present .site-header,body.present .foot{display:none}
+body.present .deck{max-width:none;margin:0;padding:0}
+body.present .slide{display:none}
+body.present .slide.is-current{display:flex;flex-direction:column;position:fixed;inset:0;margin:0;border:0;border-radius:0;box-shadow:none;overflow:auto;background:#fff}
+body.present .slide.is-current .slide-body{flex:1;max-width:1280px;width:100%;margin:0 auto;padding:2.5vh 5vw;display:flex;flex-direction:column;justify-content:center}
+body.present .slide-content li{font-size:clamp(16px,1.7vw,25px);padding:7px 0 7px 26px}
+body.present .slide-content li::before{top:15px;width:9px;height:9px}
+body.present .slide-content h3{font-size:clamp(15px,1.5vw,20px)!important}
+body.present .lead-in{font-size:clamp(18px,2vw,28px)}
+body.present .slidefig{max-width:100%;max-height:70vh;width:auto;height:auto}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,10,24,.93);display:flex;align-items:center;justify-content:center;padding:3vh 3vw;cursor:zoom-out}
+.lightbox[hidden]{display:none}
+.lightbox .lb-img{max-width:96vw;max-height:94vh;width:auto;height:auto;border-radius:6px;background:#fff;cursor:default}
+.lightbox .lb-close{position:fixed;top:16px;right:20px;background:#8B3A2E;color:#fff;border:0;border-radius:8px;font-size:24px;line-height:1;width:46px;height:46px;cursor:pointer}
+body.present .q .prompt2{font-size:clamp(18px,1.8vw,25px)}
+body.present .choice{font-size:clamp(16px,1.6vw,21px);padding:13px 19px}
+body.present .reveal{font-size:clamp(15px,1.5vw,21px)}
+.present-bar{position:fixed;z-index:70;left:50%;bottom:18px;transform:translateX(-50%);display:none;align-items:center;gap:10px;background:rgba(11,21,48,.92);color:#fff;padding:8px 12px;border-radius:999px}
+body.present .present-bar{display:flex}
+.present-bar button{font-weight:700;font-size:16px;border:0;border-radius:999px;background:#8B3A2E;color:#fff;width:42px;height:42px;cursor:pointer}
+.present-bar button:disabled{background:#3a4357}.present-bar .count{font-size:13px;font-weight:700;min-width:62px;text-align:center}
+.present-bar .exit{width:auto;padding:0 14px;background:transparent;border:1px solid rgba(255,255,255,.4)}
+@media print{.site-header,.present-bar,.foot,#presentBtn{display:none}.slide{break-inside:avoid;page-break-after:always;box-shadow:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.tkey{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;align-items:start;margin-top:4px}
+.tkey .tcol{border:1px solid rgba(11,21,48,.18);border-radius:10px;overflow:hidden;background:#fff}
+.tkey .th{padding:8px 12px;font-weight:800;font-size:14px;letter-spacing:.02em}
+.tkey .th small{display:block;font-weight:600;font-size:11px;opacity:.95}
+.tkey .th.ep{background:#C9A14A;color:#0B1530}
+.tkey .th.ct{background:#8B3A2E;color:#fff}
+.tkey .th.mu{background:#0B1530;color:#fff}
+.tkey .th.ne{background:#142a36;color:#fff}
+.tkey .sub{padding:9px 12px}
+.tkey .grp{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8B3A2E;margin:9px 0 4px}
+.tkey .grp:first-child{margin-top:0}
+.tkey .it{font-size:12.5px;line-height:1.34;margin:0 0 7px;color:#1d2733}
+.tkey .it b{color:#0B1530}
+.tkey .it .tell{color:#3a4658}
+@media (max-width:760px){.tkey{grid-template-columns:1fr}}
+@media print{.tkey{grid-template-columns:repeat(2,1fr)}.tkey .tcol{break-inside:avoid}}
+.imgph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:200px;border:2px dashed #B8924A;border-radius:10px;background:#FAFAF9;color:#8B3A2E;text-align:center;padding:18px}.imgph .ph-t{font-weight:800;font-size:14px}.imgph .ph-s{font-weight:600;font-size:12px;color:#5a6573}.dtable{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}.dtable caption{text-align:left;font-weight:700;color:#8B3A2E;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.dtable th,.dtable td{border:1px solid rgba(11,21,48,.18);padding:8px 10px;text-align:left;vertical-align:top}.dtable thead th{background:#0B1530;color:#fff}.dtable tbody th{background:#FAFAF9;color:#0B1530;white-space:nowrap}.dtable tbody tr:nth-child(even) td{background:#FAFAF9}@media print{.imgph{min-height:120px}.dtable{font-size:10.5px}}
+.treewrap{overflow-x:auto;padding-bottom:8px;margin-top:12px}
+.tree{display:inline-block;min-width:100%;box-sizing:border-box}
+.tree ul{position:relative;padding:24px 0 0;white-space:nowrap;margin:0;text-align:center;list-style:none}
+.tree>ul{padding-top:0}
+.tree li{display:inline-block;vertical-align:top;text-align:center;position:relative;padding:24px 7px 0}
+.tree li::before,.tree li::after{content:"";position:absolute;top:0;right:50%;border-top:2px solid rgba(11,21,48,.3);width:50%;height:24px}
+.tree li::after{right:auto;left:50%;border-left:2px solid rgba(11,21,48,.3)}
+.tree li:only-child::before,.tree li:only-child::after{display:none}
+.tree li:only-child{padding-top:0}
+.tree li:first-child::before,.tree li:last-child::after{border:0 none}
+.tree li:last-child::before{border-right:2px solid rgba(11,21,48,.3);border-radius:0 6px 0 0}
+.tree li:first-child::after{border-radius:6px 0 0 0}
+.tree ul ul::before{content:"";position:absolute;top:0;left:50%;border-left:2px solid rgba(11,21,48,.3);width:0;height:24px}
+.node{display:inline-block;white-space:normal;width:152px;vertical-align:top;border-radius:9px;padding:9px 12px;line-height:1.28;border:1px solid rgba(11,21,48,.18);background:#fff;box-shadow:0 1px 2px rgba(11,21,48,.05);text-align:left}
+.node b{display:block;font-weight:800;font-size:13.5px;color:#0B1530}
+.node small{display:block;font-weight:600;font-size:11px;color:#3a4658;margin-top:2px}
+.node.root{background:#0B1530;border-color:#0B1530;width:172px}
+.node.root b{color:#fff}.node.root small{color:#cfd6e4}
+.node.trunk{border-left:5px solid #0B1530}
+.node.dir{border-left:5px solid #C9A14A}
+.node.eff{border-left:5px solid #8B3A2E}
+.treekey{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px;font-size:12px;font-weight:700;color:#3a4658}
+.treekey span{display:inline-flex;align-items:center;gap:7px}
+.treekey i{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(11,21,48,.2)}
+body.present .node b{font-size:15px}
+body.present .node small{font-size:12px}
+body.present .node{width:165px}.body.present .node.root{width:190px}
+@media print{.node{box-shadow:none}.treewrap{overflow:visible}}
+.slide-tools{display:flex;justify-content:flex-end;margin:0 0 12px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:12.5px;letter-spacing:.03em;border:1px solid #0B1530;background:#0B1530;color:#fff;padding:8px 15px;border-radius:999px;cursor:pointer}
+.pill:hover{background:#16213d}.pill svg{display:block;flex:none}
+.imgmodal{position:fixed;inset:0;z-index:110;background:rgba(6,10,24,.93);display:flex;align-items:center;justify-content:center;padding:3vh 3vw}
+.imgmodal[hidden]{display:none}
+.imgmodal-card{background:#fff;border-radius:12px;padding:20px;max-width:1040px;width:100%;max-height:92vh;overflow:auto;position:relative;box-shadow:0 18px 50px rgba(6,10,24,.5)}
+.imgmodal-card .mh{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8B3A2E;margin:0 44px 10px 0}
+.imgmodal-card svg.nrn{width:100%;height:auto;display:block}
+.imgmodal-cap{font-size:13px;color:#3a4658;margin:12px 4px 0;line-height:1.5}
+.imgmodal-close{position:absolute;top:12px;right:12px;background:#8B3A2E;color:#fff;border:0;border-radius:9px;width:42px;height:42px;font-size:24px;line-height:1;cursor:pointer}
+.imgmodal-close:hover{background:#A0522D}
+@media print{.pill,.slide-tools,.imgmodal{display:none!important}}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin-top:14px}
+.figcard{border:1px solid rgba(11,21,48,.18);border-radius:10px;padding:12px 12px 14px;text-align:center;background:#fff}
+.figcard svg{width:100%;height:auto;max-width:210px;display:block;margin:0 auto}
+.figcard .fl{font-weight:800;font-size:13px;color:#0B1530;margin:9px 0 2px}
+.figcard .fs{font-size:11.5px;color:#3a4658;line-height:1.4}
+.figsvg{width:100%;height:auto;display:block;max-width:520px;margin:0 auto}
+@media print{.figrow{grid-template-columns:repeat(3,1fr)}.figcard{break-inside:avoid}}
+</style></head><body>
+<a href="#deck" class="skip">Skip to slides</a>
+<header class="site-header"><div class="id"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:46px;width:auto"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#0B1530"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#0B1530"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#8B3A2E"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#8B3A2E"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg><div><span class="eyebrow">Majors &middot; Human Anatomy</span><h1>Human <span class="ac">Anatomy</span> &middot; Cell Anatomy</h1></div></div><div class="hero-actions"><button class="btn" id="backBtn" type="button" hidden>&larr; Back</button> <button class="btn" id="presentBtn" type="button">Present</button> <button class="btn" id="printBtn" type="button">Print / Save PDF</button></div></header>
+<main class="deck" id="deck">
+
+<section class="slide divider" aria-label="Title"><div class="slide-body"><div class="divhero"><div style="margin:0 0 14px"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:64px;width:auto;display:block"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#FFFFFF"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#FFFFFF"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#C2734D"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#C2734D"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg></div><p class="dn">Majors &middot; Human Anatomy</p><h2>Anatomy of the Cell</h2><p>The cell is the smallest living unit of the body. We name the three regions of a generalized cell, build the plasma membrane, meet every organelle, and trace a secreted protein through the endomembrane system. &nbsp;Dr. Sharilyn Rennie</p></div></div></section>
+
+<section class="slide " aria-label="By the end of this lecture">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Objectives</p><h2 class="slide-title">By the end</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Name the <strong>three basic regions</strong> of a generalized cell and state what each one contains.</li><li>Describe the <strong>plasma membrane</strong>, distinguish integral from peripheral proteins, and name its surface specializations.</li><li>Identify the <strong>membranous and non-membranous organelles</strong> and state the job of each.</li><li>Explain how the <strong>nucleus</strong> stores the genetic material and how the <strong>nuclear pores</strong> control its traffic.</li><li>Trace the path a product follows through the <strong>endomembrane system</strong>, from the ER to the cell surface.</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 1 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 1</p><h2>The Generalized Cell and Its Membrane</h2><p>The three regions, then the boundary that controls what enters and leaves.</p></div></div></section>
+
+<section class="slide " aria-label="The generalized cell">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; The cell</p><h2 class="slide-title">The generalized cell: three regions</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><div class="slide-tools"><button type="button" class="pill" id="cellPillBtn" aria-haspopup="dialog" title="Open a big labeled cell to point at while you teach"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="3.4" fill="#fff"/></svg>Pull up the cell</button></div>
+<div class="slide-content"><p class="lead-in">A <strong>generalized cell</strong> is a composite model showing the features shared by most body cells. It has three regions:</p><ul><li><strong>Plasma membrane</strong>: the outer boundary that encloses the cell and separates it from its surroundings.</li><li><strong>Cytoplasm</strong>: everything between the plasma membrane and the nucleus, the <strong>cytosol</strong> plus the <strong>organelles</strong>.</li><li><strong>Nucleus</strong>: the control center, usually the largest structure in the cell.</li></ul></div></div></section>
+
+<section class="slide " aria-label="The plasma membrane">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Membrane</p><h2 class="slide-title">The plasma membrane</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><div class="split"><div class="slide-content"><p class="lead-in">A selective barrier. The <strong>fluid mosaic model</strong> describes proteins drifting within a phospholipid sheet.</p><ul><li><strong>Phospholipid bilayer</strong>: the basic fabric, a continuous double sheet.</li><li><strong>Integral proteins</strong>: firmly embedded, most spanning it as transmembrane channels, carriers, and receptors.</li><li><strong>Peripheral proteins</strong>: attached loosely to one face; act as enzymes and brace cell shape.</li><li><strong>Cholesterol</strong>: wedged among the phospholipids; stabilizes the membrane and keeps it fluid.</li><li><strong>Glycocalyx</strong>: the fuzzy external coat of glycoproteins and glycolipids; the cell's identity badge for recognition and adhesion.</li></ul></div><div class="figcol"><svg class="figsvg" viewBox="0 0 480 300" role="img" aria-labelledby="memT memD" style="max-width:460px"><title id="memT">The plasma membrane</title><desc id="memD">A phospholipid bilayer with heads facing out and tails facing in, an integral protein spanning the bilayer, a peripheral protein on one face, cholesterol wedged among the tails, and a glycocalyx of sugar chains on the outer surface.</desc>
+<g stroke="#9aa3ad" stroke-width="2" stroke-linecap="round"><path d="M70 54 q-6 -12 -14 -16 M70 54 q6 -12 14 -16"/><path d="M210 54 q-6 -12 -14 -16 M210 54 q6 -12 14 -16"/><path d="M410 54 q-6 -12 -14 -16 M410 54 q6 -12 14 -16"/></g>
+<g><g fill="#C9A14A" stroke="#0B1530" stroke-width="1"><circle cx="50" cy="70" r="9"/><circle cx="90" cy="70" r="9"/><circle cx="130" cy="70" r="9"/><circle cx="170" cy="70" r="9"/><circle cx="210" cy="70" r="9"/><circle cx="370" cy="70" r="9"/><circle cx="410" cy="70" r="9"/><circle cx="450" cy="70" r="9"/></g><g stroke="#0B1530" stroke-width="2" fill="none"><path d="M46 79 q-3 24 0 46 M54 79 q3 24 0 46"/><path d="M86 79 q-3 24 0 46 M94 79 q3 24 0 46"/><path d="M126 79 q-3 24 0 46 M134 79 q3 24 0 46"/><path d="M166 79 q-3 24 0 46 M174 79 q3 24 0 46"/><path d="M206 79 q-3 24 0 46 M214 79 q3 24 0 46"/><path d="M366 79 q-3 24 0 46 M374 79 q3 24 0 46"/><path d="M406 79 q-3 24 0 46 M414 79 q3 24 0 46"/><path d="M446 79 q-3 24 0 46 M454 79 q3 24 0 46"/></g></g>
+<g><g fill="#C9A14A" stroke="#0B1530" stroke-width="1"><circle cx="50" cy="200" r="9"/><circle cx="90" cy="200" r="9"/><circle cx="130" cy="200" r="9"/><circle cx="170" cy="200" r="9"/><circle cx="210" cy="200" r="9"/><circle cx="250" cy="200" r="9"/><circle cx="290" cy="200" r="9"/><circle cx="330" cy="200" r="9"/><circle cx="370" cy="200" r="9"/><circle cx="410" cy="200" r="9"/><circle cx="450" cy="200" r="9"/></g><g stroke="#0B1530" stroke-width="2" fill="none"><path d="M46 191 q-3 -24 0 -46 M54 191 q3 -24 0 -46"/><path d="M86 191 q-3 -24 0 -46 M94 191 q3 -24 0 -46"/><path d="M126 191 q-3 -24 0 -46 M134 191 q3 -24 0 -46"/><path d="M166 191 q-3 -24 0 -46 M174 191 q3 -24 0 -46"/><path d="M206 191 q-3 -24 0 -46 M214 191 q3 -24 0 -46"/><path d="M246 191 q-3 -24 0 -46 M254 191 q3 -24 0 -46"/><path d="M286 191 q-3 -24 0 -46 M294 191 q3 -24 0 -46"/><path d="M326 191 q-3 -24 0 -46 M334 191 q3 -24 0 -46"/><path d="M366 191 q-3 -24 0 -46 M374 191 q3 -24 0 -46"/><path d="M406 191 q-3 -24 0 -46 M414 191 q3 -24 0 -46"/><path d="M446 191 q-3 -24 0 -46 M454 191 q3 -24 0 -46"/></g></g>
+<rect x="266" y="52" width="48" height="166" rx="20" fill="#C2734D" stroke="#0B1530" stroke-width="1.5"/>
+<ellipse cx="150" cy="64" rx="16" ry="11" fill="#8B3A2E" stroke="#0B1530" stroke-width="1.5"/>
+<ellipse cx="340" cy="135" rx="8" ry="16" fill="#0B1530"/>
+<g stroke="#7a8190" stroke-width="1.5" fill="none"><path d="M90 258 L90 210"/><path d="M290 258 L290 218"/><path d="M150 30 L150 55"/><path d="M400 258 L346 146"/><path d="M452 30 L416 42"/></g>
+<g fill="#0B1530" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700"><text x="90" y="276" text-anchor="middle">Phospholipid bilayer</text><text x="290" y="276" text-anchor="middle">Integral protein</text><text x="400" y="276" text-anchor="middle">Cholesterol</text><text x="150" y="22" text-anchor="middle">Peripheral protein</text><text x="470" y="22" text-anchor="end">Glycocalyx</text></g></svg><p class="figcap"><strong>Fluid mosaic.</strong> Heads face the watery outside and inside; tails hide in the middle.</p></div></div></div></section>
+
+<section class="slide " aria-label="Surface specializations">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Surface</p><h2 class="slide-title">Surface specializations</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><table class="dtable"><caption>Extensions of the cell surface</caption><thead><tr><th scope="col">Specialization</th><th scope="col">Description</th><th scope="col">Function</th></tr></thead><tbody><tr><th scope="row">Microvilli</th><td>Finger-like extensions of the cell surface.</td><td>Increase surface area for absorption.</td></tr><tr><th scope="row">Cilia</th><td>Short hair-like extensions, built on a <strong>9+2</strong> microtubule core (nine doublets around a central pair).</td><td>Sweep substances across the cell surface.</td></tr><tr><th scope="row">Flagellum</th><td>A single long extension, also a 9+2 core.</td><td>Propels the cell; the only human example is the sperm tail.</td></tr></tbody></table>
+<div class="figrow">
+<div class="figcard"><svg viewBox="0 0 130 90" role="img" aria-label="Microvilli: many short finger-like extensions"><line x1="15" y1="70" x2="115" y2="70" stroke="#0B1530" stroke-width="3"/><g stroke="#0B1530" stroke-width="4" stroke-linecap="round"><line x1="28" y1="70" x2="28" y2="30"/><line x1="44" y1="70" x2="44" y2="26"/><line x1="60" y1="70" x2="60" y2="30"/><line x1="76" y1="70" x2="76" y2="26"/><line x1="92" y1="70" x2="92" y2="30"/></g></svg><p class="fl">Microvilli</p><p class="fs">absorption</p></div>
+<div class="figcard"><svg viewBox="0 0 130 90" role="img" aria-label="Cilia: short hair-like extensions"><line x1="15" y1="70" x2="115" y2="70" stroke="#0B1530" stroke-width="3"/><g stroke="#0B1530" stroke-width="3" stroke-linecap="round" fill="none"><path d="M30 70 q-8 -24 6 -42"/><path d="M50 70 q-8 -24 6 -42"/><path d="M70 70 q-8 -24 6 -42"/><path d="M90 70 q-8 -24 6 -42"/></g></svg><p class="fl">Cilia</p><p class="fs">sweep (9+2)</p></div>
+<div class="figcard"><svg viewBox="0 0 130 90" role="img" aria-label="Flagellum: one long extension"><ellipse cx="40" cy="55" rx="22" ry="16" fill="#0B1530"/><path d="M62 55 q24 -18 50 0 q-24 18 -50 0" fill="none" stroke="#0B1530" stroke-width="3"/></svg><p class="fl">Flagellum</p><p class="fs">sperm tail</p></div>
+</div></div></section>
+
+<section class="slide divider" aria-label="Part 2 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 2</p><h2>The Nucleus and the Organelles</h2><p>The control center, then every membranous and non-membranous organelle.</p></div></div></section>
+
+<section class="slide " aria-label="The nucleus">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Nucleus</p><h2 class="slide-title">The nucleus</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><table class="dtable"><caption>The control center, structure by structure</caption><thead><tr><th scope="col">Structure</th><th scope="col">What it is</th></tr></thead><tbody><tr><th scope="row">Nuclear envelope</th><td>The double membrane enclosing the nucleus; its outer membrane is continuous with the rough ER.</td></tr><tr><th scope="row">Nuclear pores</th><td>Protein-lined channels through the envelope that regulate traffic both ways: messenger RNA and ribosomal subunits move out, proteins needed inside move in.</td></tr><tr><th scope="row">Nucleoplasm</th><td>The fluid inside the nucleus that suspends the other nuclear structures.</td></tr><tr><th scope="row">Nucleolus</th><td>A dense body inside the nucleus where ribosomal subunits are assembled.</td></tr><tr><th scope="row">Chromatin</th><td>The loose, threadlike form of DNA wound on proteins, present when the cell is not dividing.</td></tr><tr><th scope="row">Chromosomes</th><td>The tightly coiled form of chromatin, visible when the cell divides.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Membranous organelles">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Organelles</p><h2 class="slide-title">Membranous organelles</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><table class="dtable"><caption>Each one wrapped in its own membrane</caption><thead><tr><th scope="col">Organelle</th><th scope="col">Structure</th><th scope="col">Function</th></tr></thead><tbody><tr><th scope="row">Rough ER</th><td>A ribosome-studded membrane network.</td><td>Makes and packages proteins.</td></tr><tr><th scope="row">Smooth ER</th><td>A tubular membrane network with no ribosomes.</td><td>Makes lipids and stores calcium.</td></tr><tr><th scope="row">Golgi apparatus</th><td>A stack of flattened membrane sacs.</td><td>Sorts, packages, and ships cell products.</td></tr><tr><th scope="row">Lysosomes</th><td>Membrane sacs of digestive enzymes.</td><td>Break down worn parts and debris.</td></tr><tr><th scope="row">Peroxisomes</th><td>Membrane sacs of enzymes.</td><td>Neutralize toxins and free radicals.</td></tr><tr><th scope="row">Mitochondria</th><td>Double-membraned organelles.</td><td>Produce most of the cell's ATP.</td></tr><tr><th scope="row">Vesicles</th><td>Small membrane sacs.</td><td>Move substances within the cell.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Non-membranous organelles">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Organelles</p><h2 class="slide-title">Non-membranous organelles</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><table class="dtable"><caption>No membrane of their own</caption><thead><tr><th scope="col">Organelle</th><th scope="col">Structure</th><th scope="col">Function</th></tr></thead><tbody><tr><th scope="row">Ribosomes</th><td>Tiny particles of RNA and protein, free in the cytosol or attached to the rough ER.</td><td>Build proteins.</td></tr><tr><th scope="row">Cytoskeleton</th><td>An internal protein framework.</td><td>Gives the cell shape and allows movement.</td></tr><tr><th scope="row">&nbsp;&nbsp;Microfilaments</th><td>The thinnest fibers, made of actin.</td><td>Support the cell surface and enable movement.</td></tr><tr><th scope="row">&nbsp;&nbsp;Intermediate filaments</th><td>Rope-like fibers.</td><td>Resist pulling forces and give the cell strength.</td></tr><tr><th scope="row">&nbsp;&nbsp;Microtubules</th><td>The thickest fibers, hollow tubes.</td><td>Form tracks for transport inside the cell.</td></tr><tr><th scope="row">Centrosome</th><td>A region near the nucleus.</td><td>Organizes the microtubules.</td></tr><tr><th scope="row">Centrioles</th><td>Paired rods within the centrosome, nine microtubule triplets in a <strong>9+0</strong> array.</td><td>Organize the spindle during cell division.</td></tr></tbody></table></div></section>
+
+<section class="slide divider" aria-label="Part 3 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 3</p><h2>The Route Through the Cell</h2><p>The endomembrane system in order, then how a cell's shape matches its job.</p></div></div></section>
+
+<section class="slide " aria-label="The path materials take through the cell">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Endomembrane</p><h2 class="slide-title">The secretory pathway, in order</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><p class="lead-in">The membranous organelles connect into one route. A secreted protein travels it in five steps:</p>
+<svg class="figsvg" viewBox="0 0 720 210" role="img" aria-labelledby="secT secD" style="max-width:720px"><title id="secT">The secretory pathway in five steps</title><desc id="secD">A protein is made in the rough ER, a transport vesicle carries it to the Golgi apparatus, a secretory vesicle carries it to the plasma membrane, and exocytosis releases it from the cell.</desc>
+<g font-family="-apple-system,Segoe UI,Arial,sans-serif"><g stroke="#0B1530" stroke-width="2" fill="#7a8190"><path d="M132 56 H160 l0 -6 12 9 -12 9 0 -6 H132 Z"/><path d="M270 56 H298 l0 -6 12 9 -12 9 0 -6 H270 Z"/><path d="M408 56 H436 l0 -6 12 9 -12 9 0 -6 H408 Z"/><path d="M546 56 H574 l0 -6 12 9 -12 9 0 -6 H546 Z"/></g>
+<g><circle cx="66" cy="56" r="22" fill="#C9A14A" stroke="#0B1530" stroke-width="2"/><circle cx="204" cy="56" r="22" fill="#EDF1F3" stroke="#0B1530" stroke-width="2"/><circle cx="342" cy="56" r="22" fill="#C2734D" stroke="#0B1530" stroke-width="2"/><circle cx="480" cy="56" r="22" fill="#EDF1F3" stroke="#0B1530" stroke-width="2"/><circle cx="640" cy="56" r="22" fill="#0B1530" stroke="#0B1530" stroke-width="2"/></g>
+<g fill="#0B1530" font-weight="800" font-size="18" text-anchor="middle"><text x="66" y="62">1</text><text x="204" y="62">2</text><text x="342" y="62" fill="#fff">3</text><text x="480" y="62">4</text><text x="640" y="62" fill="#fff">5</text></g>
+<g fill="#0B1530" font-weight="700" font-size="13.5" text-anchor="middle"><text x="66" y="104">Rough ER</text><text x="66" y="120">protein made</text><text x="204" y="104">Transport</text><text x="204" y="120">vesicle</text><text x="342" y="104">Golgi</text><text x="342" y="120">sort &amp; package</text><text x="480" y="104">Secretory</text><text x="480" y="120">vesicle</text><text x="640" y="104">Exocytosis</text><text x="640" y="120">leaves the cell</text></g>
+<g fill="#3a4658" font-size="12.5"><text x="20" y="168">Supporting the route: <tspan font-weight="700" fill="#0B1530">endocytosis</tspan> runs it in reverse, <tspan font-weight="700" fill="#0B1530">microtubules</tspan> are the tracks, and <tspan font-weight="700" fill="#0B1530">nuclear pores</tspan> are the gateway where messenger RNA exits.</text></g></g></svg></div></section>
+
+<section class="slide " aria-label="Cells vary with their job">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Form and function</p><h2 class="slide-title">Cells vary with their job</h2></div><div class="slide-meta">Cell</div></header>
+<div class="slide-body"><p class="lead-in">No cell looks like the generalized model. Structure follows job: a cell carries the organelles its task needs.</p><table class="dtable"><caption>Three cells, three adaptations</caption><thead><tr><th scope="col">Cell type</th><th scope="col">Structural adaptation</th><th scope="col">Why it fits the job</th></tr></thead><tbody><tr><th scope="row">Muscle cell</th><td>Long and packed with mitochondria.</td><td>Contraction demands a constant, heavy supply of ATP.</td></tr><tr><th scope="row">Red blood cell</th><td>Loses its nucleus and organelles.</td><td>Frees interior space for oxygen-carrying contents.</td></tr><tr><th scope="row">White blood cell</th><td>Changes shape freely.</td><td>Can squeeze between cells to reach a site of infection.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Clinical, the organelle points to the disease">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Clinical</p><h2 class="slide-title">The organelle points to the disease</h2></div><div class="slide-meta">Clinical</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li><strong>Lysosomes</strong> that cannot break down their contents cause the <strong>lysosomal storage diseases</strong>, such as Tay-Sachs.</li><li><strong>Cilia</strong> that do not form correctly cause <strong>primary ciliary dyskinesia</strong>, where the airways cannot clear mucus and infections build up.</li><li>Because <strong>mitochondria</strong> carry their own small set of DNA, mitochondrial disorders follow a distinctive inheritance pattern.</li><li>When you know what an organelle does, you can <strong>predict what fails</strong> when it is defective.</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 4 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 4</p><h2>Check Your Understanding</h2><p>From recall to reasoning, then the takeaways and your study questions.</p></div></div></section>
+
+<section class="slide " aria-label="Recall, name the region">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Recall (DOK 1)</p><h2 class="slide-title">Name the organelle</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 1 &middot; Recall</p><p class="prompt2">Which organelle sorts, packages, and ships the cell's products?</p><div class="choices"><button type="button" class="choice" data-correct="false">Rough ER</button><button type="button" class="choice" data-correct="true">Golgi apparatus</button><button type="button" class="choice" data-correct="false">Lysosome</button><button type="button" class="choice" data-correct="false">Peroxisome</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>The Golgi apparatus.</strong> The rough ER makes the protein; the Golgi sorts, modifies, and packages it for shipping.</p></div></div></div></section>
+
+<section class="slide " aria-label="Apply the term">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Skill / concept (DOK 2)</p><h2 class="slide-title">Match structure to type</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 2 &middot; Skill / concept</p><p class="prompt2">Which is a <em>non-membranous</em> organelle?</p><div class="choices"><button type="button" class="choice" data-correct="false">Lysosome</button><button type="button" class="choice" data-correct="false">Golgi apparatus</button><button type="button" class="choice" data-correct="true">Ribosome</button><button type="button" class="choice" data-correct="false">Smooth ER</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>The ribosome.</strong> Ribosomes, the cytoskeleton, the centrosome, and centrioles have no membrane; lysosomes, Golgi, and ER all do.</p></div></div></div></section>
+
+<section class="slide " aria-label="Predict from structure">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Strategic reasoning (DOK 3)</p><h2 class="slide-title">Predict from structure</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 3 &middot; Strategic reasoning</p><p class="prompt2">A cell built to secrete large amounts of protein would be richest in which pair?</p><div class="choices"><button type="button" class="choice" data-correct="true">Rough ER and Golgi apparatus</button><button type="button" class="choice" data-correct="false">Smooth ER and peroxisomes</button><button type="button" class="choice" data-correct="false">Lysosomes and microvilli</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>Rough ER and Golgi.</strong> Protein is made on the rough ER and processed and packaged by the Golgi, so a secretory cell is packed with both. Structure follows job.</p></div></div></div></section>
+
+<section class="slide " aria-label="Key takeaways">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Wrap-up</p><h2 class="slide-title">Key takeaways</h2></div><div class="slide-meta">Summary</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Three regions: <strong>plasma membrane, cytoplasm</strong> (cytosol + organelles), and <strong>nucleus</strong>.</li><li>The membrane is a <strong>phospholipid bilayer</strong> with integral and peripheral proteins, cholesterol, and a glycocalyx; surface specializations are microvilli, cilia, and the flagellum.</li><li>The nucleus holds the genetic code: <strong>envelope, pores, nucleolus, chromatin / chromosomes</strong>.</li><li>Organelles divide into <strong>membranous</strong> (ER, Golgi, lysosomes, peroxisomes, mitochondria, vesicles) and <strong>non-membranous</strong> (ribosomes, cytoskeleton, centrosome, centrioles).</li><li>The endomembrane route: <strong>rough ER &rarr; transport vesicle &rarr; Golgi &rarr; secretory vesicle &rarr; exocytosis</strong>.</li></ul></div></div></section>
+
+<section class="slide " aria-label="Study questions">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Given, not Googled</p><h2 class="slide-title">Study questions</h2></div><div class="slide-meta">Synthesis</div></header>
+<div class="slide-body"><div class="slide-content"><p class="lead-in">Answer these in writing, in your own words. Bring them to class; they are the reasoning the exams ask for.</p><ul><li>Name the three regions of a generalized cell and state what each one contains.</li><li>Trace a secreted protein through the endomembrane system, from where it is made to where it leaves the cell.</li><li>Compare membranous and non-membranous organelles and give two examples of each.</li><li>Explain how the structure of the plasma membrane makes it a selective barrier.</li></ul></div></div></section>
+
+</main>
+<p class="foot">Dr. Sharilyn Rennie &middot; Majors &middot; Human Anatomy &middot; Anatomy of the Cell. Need a PDF? Use Print / Save PDF above, or download the accessible PDF from Canvas.</p>
+<div class="present-bar"><button type="button" class="prev" aria-label="Previous slide">&#8249;</button><span class="count" id="presentCount">1 / 1</span><button type="button" class="next" aria-label="Next slide">&#8250;</button><button type="button" class="exit">Exit</button></div>
+<script>
+(function(){document.querySelectorAll('.deck .slide').forEach(function(s,i){var n=s.querySelector('.slide-num');if(n)n.textContent=(i<10?'0':'')+i;});})();
+(function(){document.querySelectorAll('.decision').forEach(function(g){var r=g.querySelector('.reveal');g.querySelectorAll('.choice').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('.choice').forEach(function(x){x.classList.remove('right','wrong');x.classList.add(x.getAttribute('data-correct')==='true'?'right':'wrong');});if(r)r.hidden=false;});});});})();
+(function(){var pr=document.getElementById('printBtn');if(pr)pr.addEventListener('click',function(){window.print();});})();
+(function(){var slides=[].slice.call(document.querySelectorAll('.deck .slide'));if(!slides.length)return;var idx=0,on=false;var bar=document.querySelector('.present-bar'),countEl=document.getElementById('presentCount');var prev=bar.querySelector('.prev'),next=bar.querySelector('.next'),exitB=bar.querySelector('.exit');
+function show(i){idx=Math.max(0,Math.min(slides.length-1,i));slides.forEach(function(s,k){s.classList.toggle('is-current',k===idx);});countEl.textContent=(idx+1)+' / '+slides.length;prev.disabled=idx===0;next.disabled=idx===slides.length-1;}
+function enter(i){on=true;document.body.classList.add('present');show(i||0);if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(function(){});}
+function exit(){on=false;document.body.classList.remove('present');slides.forEach(function(s){s.classList.remove('is-current');});if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(function(){});}
+var pb=document.getElementById('presentBtn');if(pb)pb.addEventListener('click',function(){enter(0);});
+prev.addEventListener('click',function(){show(idx-1);});next.addEventListener('click',function(){show(idx+1);});exitB.addEventListener('click',exit);
+document.addEventListener('keydown',function(e){if(!on)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(idx+1);}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(idx-1);}else if(e.key==='Escape'){exit();}});
+document.addEventListener('fullscreenchange',function(){if(!document.fullscreenElement&&on)exit();});
+})();
+</script>
+<div class="lightbox" id="lightbox" hidden><img class="lb-img" src="" alt=""><button type="button" class="lb-close" aria-label="Close enlarged image">&times;</button></div>
+<script>
+(function(){var lb=document.getElementById('lightbox');if(!lb)return;var img=lb.querySelector('.lb-img');var cb=lb.querySelector('.lb-close');
+document.querySelectorAll('.slidefig').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();img.src=el.currentSrc||el.src;img.alt=el.alt||'';lb.hidden=false;});});
+function close(){lb.hidden=true;img.removeAttribute('src');}
+lb.addEventListener('click',function(e){if(e.target!==img)close();});
+cb.addEventListener('click',function(e){e.stopPropagation();close();});
+document.addEventListener('keydown',function(e){if(!lb.hidden&&e.key==='Escape')close();});})();
+</script>
+<script>(function(){var b=document.getElementById("backBtn");if(!b)return;if(document.referrer||window.history.length>1){b.hidden=false;}b.addEventListener("click",function(){if(history.length>1)history.back();else if(document.referrer)location.href=document.referrer;});})();</script>
+<div class="imgmodal" id="cellModal" hidden role="dialog" aria-modal="true" aria-label="Labeled generalized cell diagram"><div class="imgmodal-card"><button type="button" class="imgmodal-close" aria-label="Close the cell diagram">&times;</button><p class="mh">The generalized cell, labeled</p>
+<svg class="nrn" viewBox="0 0 560 440" role="img" aria-labelledby="glcT glcD" style="max-width:560px"><title id="glcT">A labeled generalized cell</title><desc id="glcD">A cell bounded by the plasma membrane with microvilli on top. Inside: the nucleus with its nucleolus, rough and smooth ER, the Golgi apparatus, mitochondria, a lysosome, free ribosomes, and the centrosome, all suspended in the cytoplasm.</desc>
+<rect x="80" y="70" width="400" height="312" rx="92" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/>
+<g stroke="#0B1530" stroke-width="3" stroke-linecap="round"><line x1="210" y1="72" x2="210" y2="48"/><line x1="232" y1="71" x2="232" y2="44"/><line x1="254" y1="71" x2="254" y2="48"/><line x1="276" y1="72" x2="276" y2="44"/><line x1="298" y1="72" x2="298" y2="48"/></g>
+<circle cx="195" cy="210" r="80" fill="#cdd7df" stroke="#0B1530" stroke-width="3"/>
+<circle cx="195" cy="210" r="74" fill="none" stroke="#0B1530" stroke-width="1.2"/>
+<g fill="#EDF1F3"><rect x="190" y="128" width="10" height="6"/><rect x="271" y="206" width="6" height="10"/><rect x="190" y="286" width="10" height="6"/><rect x="113" y="206" width="6" height="10"/></g>
+<g stroke="#6b7a86" stroke-width="2" fill="none" opacity="0.7"><path d="M170 185 q20 -14 44 4 q-18 16 -40 0"/><path d="M176 232 q22 12 46 -4"/></g>
+<circle cx="195" cy="210" r="24" fill="#0B1530"/>
+<g stroke="#0B1530" stroke-width="2.5" fill="none"><path d="M300 150 q26 16 0 34 q-26 16 0 34 q26 16 0 34"/><path d="M322 150 q26 16 0 34 q-26 16 0 34 q26 16 0 34"/></g>
+<g fill="#8B3A2E"><circle cx="296" cy="152" r="3"/><circle cx="296" cy="186" r="3"/><circle cx="296" cy="220" r="3"/><circle cx="318" cy="152" r="3"/><circle cx="318" cy="186" r="3"/><circle cx="318" cy="220" r="3"/></g>
+<g stroke="#0B1530" stroke-width="2.5" fill="none"><path d="M360 250 q22 12 0 26 q-22 14 0 28"/></g>
+<g fill="none" stroke="#0B1530" stroke-width="2.5"><path d="M250 320 q44 -16 88 0"/><path d="M256 332 q38 -13 76 0"/><path d="M262 344 q32 -11 64 0"/></g>
+<circle cx="350" cy="338" r="7" fill="#C9A14A" stroke="#0B1530" stroke-width="1.2"/>
+<g><ellipse cx="408" cy="158" rx="30" ry="17" fill="#C2734D" stroke="#0B1530" stroke-width="2"/><path d="M384 158 q8 -8 0 -12 m10 12 q8 -8 0 -12 m10 12 q8 -8 0 -12 m10 12 q8 -8 0 -12" stroke="#0B1530" stroke-width="1.5" fill="none"/></g>
+<g><ellipse cx="406" cy="262" rx="28" ry="16" fill="#C2734D" stroke="#0B1530" stroke-width="2"/></g>
+<circle cx="150" cy="330" r="15" fill="#fff" stroke="#0B1530" stroke-width="2"/><g fill="#0B1530"><circle cx="146" cy="328" r="2.5"/><circle cx="155" cy="332" r="2.5"/><circle cx="150" cy="336" r="2.5"/></g>
+<g fill="#0B1530"><circle cx="250" cy="140" r="3.5"/><circle cx="264" cy="150" r="3.5"/><circle cx="240" cy="156" r="3.5"/><circle cx="258" cy="128" r="3.5"/></g>
+<g stroke="#0B1530" stroke-width="3"><line x1="286" y1="120" x2="304" y2="120"/><line x1="295" y1="111" x2="295" y2="129"/></g>
+<g stroke="#7a8190" stroke-width="1.5" fill="none"><path d="M66 126 L86 150"/><path d="M250 42 L256 60"/><path d="M70 250 L122 226"/><path d="M70 320 L182 214"/><path d="M70 392 L146 336"/><path d="M250 112 L260 132"/><path d="M380 40 L300 116"/><path d="M490 150 L320 182"/><path d="M490 204 L440 164"/><path d="M490 254 L372 264"/><path d="M490 324 L340 332"/><path d="M300 410 L350 300"/></g>
+<g fill="#0B1530" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700"><text x="64" y="126" text-anchor="end">Plasma membrane</text><text x="250" y="36" text-anchor="middle">Microvilli</text><text x="380" y="34" text-anchor="middle">Centrosome</text><text x="64" y="250" text-anchor="end">Nucleus</text><text x="64" y="324" text-anchor="end">Nucleolus</text><text x="64" y="396" text-anchor="end">Lysosome</text><text x="246" y="108" text-anchor="end">Ribosomes</text><text x="496" y="150">Rough ER</text><text x="496" y="204">Mitochondrion</text><text x="496" y="254">Smooth ER</text><text x="496" y="324">Golgi apparatus</text><text x="300" y="424" text-anchor="middle">Cytoplasm (cytosol)</text></g></svg>
+<p class="imgmodal-cap">Point as you teach: the membrane bounds the cell, the nucleus holds the nucleolus, the rough ER and Golgi run the secretory route, mitochondria make ATP, and the cytosol suspends it all. Press Esc or tap outside to close.</p></div></div>
+<script>(function(){var btn=document.getElementById('cellPillBtn'),m=document.getElementById('cellModal');if(!btn||!m)return;var closeB=m.querySelector('.imgmodal-close'),last=null;
+function open(){last=document.activeElement;m.hidden=false;closeB.focus();}
+function close(){m.hidden=true;if(last&&last.focus)last.focus();}
+btn.addEventListener('click',open);closeB.addEventListener('click',close);
+m.addEventListener('click',function(e){if(e.target===m)close();});
+document.addEventListener('keydown',function(e){if(!m.hidden&&e.key==='Escape')close();});})();</script>
+<script>
+/* iframe height-sender: posts this page's height to a parent frame on load and on resize */
+(function(){function h(){var d=document,b=d.body,e=d.documentElement;return Math.max(b.scrollHeight,b.offsetHeight,e.clientHeight,e.scrollHeight,e.offsetHeight);}
+function send(){try{parent.postMessage({type:"setHeight",id:"cell-anatomy",height:h()},"*");}catch(x){}}
+window.addEventListener("load",send);window.addEventListener("resize",send);
+if(window.ResizeObserver){try{new ResizeObserver(send).observe(document.body);}catch(x){}}})();
+</script>
+</body></html>

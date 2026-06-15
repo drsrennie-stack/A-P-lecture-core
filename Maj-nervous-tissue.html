@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Majors &middot; Functional Organization &amp; Nervous Tissue &middot; Human Anatomy &middot; Dr. Sharilyn Rennie</title>
+<style>
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,Arial,sans-serif;background:#FAFAF9;color:#060A18;font-size:16px;line-height:1.5}
+button{font-family:inherit} a{color:#8B3A2E}
+:focus-visible{outline:3px solid #8B3A2E;outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;position:fixed;background:#060A18;color:#fff;padding:10px 14px;border-radius:4px;z-index:80}
+.site-header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px max(16px,3vw);background:#fff;border-bottom:1px solid rgba(11,21,48,.14)}
+.site-header .id{flex:1;min-width:240px;display:flex;align-items:center;gap:14px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#8B3A2E;display:block;margin-bottom:2px}
+.site-header h1{font-size:18px;font-weight:800;margin:0;color:#0B1530}
+.site-header h1 .ac{color:#8B3A2E}
+.btn{font-weight:700;font-size:13px;letter-spacing:.04em;border:1px solid #060A18;background:#060A18;color:#fff;padding:10px 16px;border-radius:6px;cursor:pointer}
+.btn:hover{background:#16213d}
+.deck{max-width:1180px;margin:0 auto;padding:24px max(16px,3vw) 40px}
+.slide{background:#fff;border:1px solid rgba(11,21,48,.14);border-radius:12px;box-shadow:0 1px 3px rgba(11,21,48,.06);margin-bottom:22px;overflow:hidden}
+.slide-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:15px 20px;background:#FAFAF9;border-bottom:1px solid rgba(11,21,48,.14)}
+.slide-num{font-size:28px;font-weight:800;color:#8B3A2E;min-width:46px}
+.slide-eyebrow{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#060A18;opacity:.6;margin:0 0 3px}
+.slide-title{font-size:clamp(18px,2.2vw,24px);font-weight:800;margin:0}
+.slide-meta{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8B3A2E}
+.slide-body{padding:22px}
+.lead-in{font-size:17px;font-weight:600;margin:0 0 14px}
+.slide-content h3{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8B3A2E;margin:0 0 14px}
+.slide-content ul{margin:0;padding:0;list-style:none}
+.slide-content li{font-size:15.5px;line-height:1.5;padding:5px 0 5px 18px;position:relative}
+.slide-content li::before{content:"";position:absolute;left:2px;top:12px;width:7px;height:7px;background:#8B3A2E;border-radius:50%}
+.slide-content li strong{font-weight:800}
+.split{display:grid;grid-template-columns:minmax(260px,1fr) minmax(280px,1.05fr);gap:22px;align-items:center}
+.takeaway{margin-top:16px;padding:14px 16px;background:#FAFAF9;border-left:3px solid #8B3A2E;border-radius:6px;font-size:15px}
+.takeaway strong{color:#8B3A2E}
+.figcol{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0}
+.slidefig{width:100%;height:auto;max-width:620px;border-radius:8px;background:#fff;cursor:zoom-in}
+.figcap{font-size:12.5px;color:#060A18;opacity:.78;text-align:center;margin:8px 0 0}
+.figcap strong{color:#8B3A2E;opacity:1}
+.divider .slide-header{display:none}
+.divider .slide-body{padding:0}
+.divhero{background:#060A18;color:#fff;padding:9vh 6vw;min-height:46vh;display:flex;flex-direction:column;justify-content:center}
+.divhero .dn{font-size:13px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:#DCB45C;margin:0 0 10px}
+.divhero h2{font-size:clamp(26px,4vw,46px);font-weight:800;margin:0 0 10px;line-height:1.06}
+.divhero p{font-size:clamp(15px,1.6vw,20px);opacity:.9;margin:0;max-width:64ch}
+.q{border:1px solid rgba(11,21,48,.14);border-left:4px solid #8B3A2E;background:#fff;border-radius:8px;padding:16px 18px;margin:0 0 14px}
+.q .lab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8B3A2E;margin:0 0 8px}
+.q .prompt2{font-weight:700;font-size:16px;margin:0 0 12px}
+.choices{display:flex;gap:10px;flex-wrap:wrap}
+.choice{font-weight:700;font-size:15px;border-radius:6px;cursor:pointer;border:1px solid #060A18;background:#fff;color:#060A18;padding:10px 15px}
+.choice:hover{background:#EAEEF4}
+.choice.right{background:#EAEEF4;border-color:#0B1530;color:#0B1530}
+.choice.wrong{border-color:rgba(11,21,48,.14);opacity:.55}
+.reveal{margin:12px 0 0;border:1px solid rgba(11,21,48,.14);background:#FAFAF9;border-radius:6px;padding:12px 14px}
+.reveal[hidden]{display:none}.reveal .rlab{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6E5018;margin:0 0 6px}.reveal p{margin:0}
+.foot{margin:8px max(16px,3vw) 30px;font-size:12px;color:#060A18;opacity:.6;border-top:1px solid rgba(11,21,48,.14);padding-top:12px;max-width:1180px}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+body.present{overflow:hidden;background:#060A18}
+body.present .site-header,body.present .foot{display:none}
+body.present .deck{max-width:none;margin:0;padding:0}
+body.present .slide{display:none}
+body.present .slide.is-current{display:flex;flex-direction:column;position:fixed;inset:0;margin:0;border:0;border-radius:0;box-shadow:none;overflow:auto;background:#fff}
+body.present .slide.is-current .slide-body{flex:1;max-width:1280px;width:100%;margin:0 auto;padding:2.5vh 5vw;display:flex;flex-direction:column;justify-content:center}
+body.present .slide-content li{font-size:clamp(16px,1.7vw,25px);padding:7px 0 7px 26px}
+body.present .slide-content li::before{top:15px;width:9px;height:9px}
+body.present .slide-content h3{font-size:clamp(15px,1.5vw,20px)!important}
+body.present .lead-in{font-size:clamp(18px,2vw,28px)}
+body.present .slidefig{max-width:100%;max-height:70vh;width:auto;height:auto}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,10,24,.93);display:flex;align-items:center;justify-content:center;padding:3vh 3vw;cursor:zoom-out}
+.lightbox[hidden]{display:none}
+.lightbox .lb-img{max-width:96vw;max-height:94vh;width:auto;height:auto;border-radius:6px;background:#fff;cursor:default}
+.lightbox .lb-close{position:fixed;top:16px;right:20px;background:#8B3A2E;color:#fff;border:0;border-radius:8px;font-size:24px;line-height:1;width:46px;height:46px;cursor:pointer}
+body.present .q .prompt2{font-size:clamp(18px,1.8vw,25px)}
+body.present .choice{font-size:clamp(16px,1.6vw,21px);padding:13px 19px}
+body.present .reveal{font-size:clamp(15px,1.5vw,21px)}
+.present-bar{position:fixed;z-index:70;left:50%;bottom:18px;transform:translateX(-50%);display:none;align-items:center;gap:10px;background:rgba(11,21,48,.92);color:#fff;padding:8px 12px;border-radius:999px}
+body.present .present-bar{display:flex}
+.present-bar button{font-weight:700;font-size:16px;border:0;border-radius:999px;background:#8B3A2E;color:#fff;width:42px;height:42px;cursor:pointer}
+.present-bar button:disabled{background:#3a4357}.present-bar .count{font-size:13px;font-weight:700;min-width:62px;text-align:center}
+.present-bar .exit{width:auto;padding:0 14px;background:transparent;border:1px solid rgba(255,255,255,.4)}
+@media print{.site-header,.present-bar,.foot,#presentBtn{display:none}.slide{break-inside:avoid;page-break-after:always;box-shadow:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.tkey{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;align-items:start;margin-top:4px}
+.tkey .tcol{border:1px solid rgba(11,21,48,.18);border-radius:10px;overflow:hidden;background:#fff}
+.tkey .th{padding:8px 12px;font-weight:800;font-size:14px;letter-spacing:.02em}
+.tkey .th small{display:block;font-weight:600;font-size:11px;opacity:.95}
+.tkey .th.ep{background:#C9A14A;color:#0B1530}
+.tkey .th.ct{background:#8B3A2E;color:#fff}
+.tkey .th.mu{background:#0B1530;color:#fff}
+.tkey .th.ne{background:#142a36;color:#fff}
+.tkey .sub{padding:9px 12px}
+.tkey .grp{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8B3A2E;margin:9px 0 4px}
+.tkey .grp:first-child{margin-top:0}
+.tkey .it{font-size:12.5px;line-height:1.34;margin:0 0 7px;color:#1d2733}
+.tkey .it b{color:#0B1530}
+.tkey .it .tell{color:#3a4658}
+@media (max-width:760px){.tkey{grid-template-columns:1fr}}
+@media print{.tkey{grid-template-columns:repeat(2,1fr)}.tkey .tcol{break-inside:avoid}}
+.imgph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:200px;border:2px dashed #B8924A;border-radius:10px;background:#FAFAF9;color:#8B3A2E;text-align:center;padding:18px}.imgph .ph-t{font-weight:800;font-size:14px}.imgph .ph-s{font-weight:600;font-size:12px;color:#5a6573}.dtable{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}.dtable caption{text-align:left;font-weight:700;color:#8B3A2E;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.dtable th,.dtable td{border:1px solid rgba(11,21,48,.18);padding:8px 10px;text-align:left;vertical-align:top}.dtable thead th{background:#0B1530;color:#fff}.dtable tbody th{background:#FAFAF9;color:#0B1530;white-space:nowrap}.dtable tbody tr:nth-child(even) td{background:#FAFAF9}@media print{.imgph{min-height:120px}.dtable{font-size:10.5px}}
+.treewrap{overflow-x:auto;padding-bottom:8px;margin-top:12px}
+.tree{display:inline-block;min-width:100%;box-sizing:border-box}
+.tree ul{position:relative;padding:24px 0 0;white-space:nowrap;margin:0;text-align:center;list-style:none}
+.tree>ul{padding-top:0}
+.tree li{display:inline-block;vertical-align:top;text-align:center;position:relative;padding:24px 7px 0}
+.tree li::before,.tree li::after{content:"";position:absolute;top:0;right:50%;border-top:2px solid rgba(11,21,48,.3);width:50%;height:24px}
+.tree li::after{right:auto;left:50%;border-left:2px solid rgba(11,21,48,.3)}
+.tree li:only-child::before,.tree li:only-child::after{display:none}
+.tree li:only-child{padding-top:0}
+.tree li:first-child::before,.tree li:last-child::after{border:0 none}
+.tree li:last-child::before{border-right:2px solid rgba(11,21,48,.3);border-radius:0 6px 0 0}
+.tree li:first-child::after{border-radius:6px 0 0 0}
+.tree ul ul::before{content:"";position:absolute;top:0;left:50%;border-left:2px solid rgba(11,21,48,.3);width:0;height:24px}
+.node{display:inline-block;white-space:normal;width:152px;vertical-align:top;border-radius:9px;padding:9px 12px;line-height:1.28;border:1px solid rgba(11,21,48,.18);background:#fff;box-shadow:0 1px 2px rgba(11,21,48,.05);text-align:left}
+.node b{display:block;font-weight:800;font-size:13.5px;color:#0B1530}
+.node small{display:block;font-weight:600;font-size:11px;color:#3a4658;margin-top:2px}
+.node.root{background:#0B1530;border-color:#0B1530;width:172px}
+.node.root b{color:#fff}.node.root small{color:#cfd6e4}
+.node.trunk{border-left:5px solid #0B1530}
+.node.dir{border-left:5px solid #C9A14A}
+.node.eff{border-left:5px solid #8B3A2E}
+.treekey{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px;font-size:12px;font-weight:700;color:#3a4658}
+.treekey span{display:inline-flex;align-items:center;gap:7px}
+.treekey i{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(11,21,48,.2)}
+body.present .node b{font-size:15px}
+body.present .node small{font-size:12px}
+body.present .node{width:165px}.body.present .node.root{width:190px}
+@media print{.node{box-shadow:none}.treewrap{overflow:visible}}
+.slide-tools{display:flex;justify-content:flex-end;margin:0 0 12px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:12.5px;letter-spacing:.03em;border:1px solid #0B1530;background:#0B1530;color:#fff;padding:8px 15px;border-radius:999px;cursor:pointer}
+.pill:hover{background:#16213d}.pill svg{display:block;flex:none}
+.imgmodal{position:fixed;inset:0;z-index:110;background:rgba(6,10,24,.93);display:flex;align-items:center;justify-content:center;padding:3vh 3vw}
+.imgmodal[hidden]{display:none}
+.imgmodal-card{background:#fff;border-radius:12px;padding:20px;max-width:1040px;width:100%;max-height:92vh;overflow:auto;position:relative;box-shadow:0 18px 50px rgba(6,10,24,.5)}
+.imgmodal-card .mh{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8B3A2E;margin:0 44px 10px 0}
+.imgmodal-card svg.nrn{width:100%;height:auto;display:block}
+.imgmodal-cap{font-size:13px;color:#3a4658;margin:12px 4px 0;line-height:1.5}
+.imgmodal-close{position:absolute;top:12px;right:12px;background:#8B3A2E;color:#fff;border:0;border-radius:9px;width:42px;height:42px;font-size:24px;line-height:1;cursor:pointer}
+.imgmodal-close:hover{background:#A0522D}
+@media print{.pill,.slide-tools,.imgmodal{display:none!important}}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin-top:14px}
+.figcard{border:1px solid rgba(11,21,48,.18);border-radius:10px;padding:12px 12px 14px;text-align:center;background:#fff}
+.figcard svg{width:100%;height:auto;max-width:210px;display:block;margin:0 auto}
+.figcard .fl{font-weight:800;font-size:13px;color:#0B1530;margin:9px 0 2px}
+.figcard .fs{font-size:11.5px;color:#3a4658;line-height:1.4}
+.figsvg{width:100%;height:auto;display:block;max-width:520px;margin:0 auto}
+@media print{.figrow{grid-template-columns:repeat(3,1fr)}.figcard{break-inside:avoid}}
+</style></head><body>
+<a href="#deck" class="skip">Skip to slides</a>
+<header class="site-header"><div class="id"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:46px;width:auto"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#0B1530"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#0B1530"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#8B3A2E"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#8B3A2E"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg><div><span class="eyebrow">Majors &middot; Human Anatomy</span><h1>Human <span class="ac">Anatomy</span> &middot; Nervous Tissue</h1></div></div><div class="hero-actions"><button class="btn" id="backBtn" type="button" hidden>&larr; Back</button> <button class="btn" id="presentBtn" type="button">Present</button> <button class="btn" id="printBtn" type="button">Print / Save PDF</button></div></header>
+<main class="deck" id="deck">
+
+<section class="slide divider" aria-label="Title"><div class="slide-body"><div class="divhero"><div style="margin:0 0 14px"><svg viewBox="40 10 125 148" role="img" aria-label="Human Anatomy logo" focusable="false" style="height:64px;width:auto;display:block"><g transform="translate(0,18)"><g transform="translate(60,0) rotate(8 0 130)"><circle cx="0" cy="20" r="10" fill="#FFFFFF"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#FFFFFF"/></g><g transform="translate(100,0)"><circle cx="0" cy="10" r="11" fill="#C2734D"/><path d="M0,22 C-11,22 -17,26 -17,34 C-17,52 -14,70 -12,86 C-11,108 -13,122 -15,132 L15,132 C13,122 11,108 12,86 C14,70 17,52 17,34 C17,26 11,22 0,22 Z" fill="#C2734D"/></g><g transform="translate(140,0) rotate(-8 0 130)"><circle cx="0" cy="20" r="10" fill="#C9A14A"/><path d="M0,32 C-10,32 -16,36 -16,42 C-16,55 -13,68 -11,82 C-10,100 -12,118 -14,130 L14,130 C12,118 10,100 11,82 C13,68 16,55 16,42 C16,36 10,32 0,32 Z" fill="#C9A14A"/></g></g></svg></div><p class="dn">Majors &middot; Human Anatomy</p><h2>Functional Organization &amp; Nervous Tissue</h2><p>The nervous system lets the body feel, think, and act. We outline its divisions and three functions, build the neuron part by part, learn the full synapse, classify neurons by shape and by direction, meet every glial cell, follow myelination through the PNS and CNS, and name the collections of nervous tissue. &nbsp;Dr. Sharilyn Rennie</p></div></div></section>
+
+<section class="slide " aria-label="By the end of this lecture">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Objectives</p><h2 class="slide-title">By the end</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Outline the <strong>organization of the nervous system</strong> and its divisions.</li><li>Identify the <strong>parts of a neuron</strong> and classify neurons by shape and by function.</li><li>Name the <strong>neuroglia</strong> and describe <strong>myelination</strong> and the <strong>collections of nervous tissue</strong>.</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 1 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 1</p><h2>Organization of the Nervous System</h2><p>The two divisions, the motor sub-divisions, and the three functions every task runs through.</p></div></div></section>
+
+<section class="slide " aria-label="The nervous system, an overview">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Overview</p><h2 class="slide-title">The two main divisions</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><div class="slide-content"><p class="lead-in">The <strong>nervous system</strong> is the body's fast control system: it lets us feel, think, and act. It has two main divisions.</p><ul><li><strong>Central nervous system (CNS)</strong>: the <strong>brain</strong> (in the cranial cavity, about 85 billion neurons) and the <strong>spinal cord</strong> (in the vertebral canal, linking brain to body). It processes information and issues commands.</li><li><strong>Peripheral nervous system (PNS)</strong>: every neural structure outside the brain and cord. It includes the <strong>nerves</strong> (bundles of axons; 12 pairs of cranial nerves and 31 pairs of spinal nerves), the <strong>ganglia</strong> (small masses of neuron cell bodies outside the CNS), and the <strong>sensory receptors</strong> that monitor changes inside and outside the body.</li></ul></div></div></section>
+
+<section class="slide " aria-label="Divisions of the nervous system">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Organization</p><h2 class="slide-title">Divisions of the nervous system</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><p class="lead-in">The nervous system splits into central and peripheral. Read it from the top down.</p><div class="treewrap"><div class="tree" role="group" aria-label="Top-down chart of the divisions of the nervous system"><ul><li><span class="node root"><b>Nervous System</b><small>feel, think, act</small></span><ul><li><span class="node trunk"><b>Central (CNS)</b><small>processes and issues commands</small></span><ul><li><span class="node trunk"><b>Brain</b><small>~85 billion neurons</small></span></li><li><span class="node trunk"><b>Spinal cord</b><small>links brain to body</small></span></li></ul></li><li><span class="node trunk"><b>Peripheral (PNS)</b><small>nerves, ganglia, receptors</small></span><ul><li><span class="node dir"><b>Sensory (afferent)</b><small>input toward the CNS</small></span></li><li><span class="node dir"><b>Motor (efferent)</b><small>commands out to effectors</small></span><ul><li><span class="node eff"><b>Somatic (SNS)</b><small>voluntary &rarr; skeletal muscle</small></span></li><li><span class="node eff"><b>Autonomic (ANS)</b><small>involuntary &rarr; smooth &amp; cardiac muscle, glands</small></span><ul><li><span class="node eff"><b>Sympathetic</b><small>fight or flight</small></span></li><li><span class="node eff"><b>Parasympathetic</b><small>rest and digest</small></span></li></ul></li><li><span class="node eff"><b>Enteric (ENS)</b><small>the gut's own brain</small></span></li></ul></li></ul></li></ul></li></ul></div></div><div class="treekey" aria-hidden="true"><span><i style="background:#0B1530"></i>Nervous system</span><span><i style="background:#fff;border-left:5px solid #0B1530"></i>CNS / PNS &amp; CNS organs</span><span><i style="background:#C9A14A"></i>PNS by direction</span><span><i style="background:#8B3A2E"></i>Motor &amp; autonomic divisions</span></div></div></section>
+
+<section class="slide " aria-label="The three functions of the nervous system">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 1 &middot; Three functions</p><h2 class="slide-title">The three functions</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><div class="slide-content"><p class="lead-in">Whatever the task, the nervous system handles it in the same three steps: a stimulus comes in, the information is processed, and a response goes out.</p><ul><li><strong>Sensory function</strong>: sensory receptors detect a change inside or outside the body and send the input toward the CNS.</li><li><strong>Integrative function</strong>: the CNS analyzes the sensory input, stores it, and decides on a response.</li><li><strong>Motor function</strong>: the CNS sends commands out to the <strong>effectors</strong> (the muscles and glands), which carry out the response.</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 2 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 2</p><h2>The Neuron and the Synapse</h2><p>Build the signaling cell part by part, then the junction where it passes its signal on.</p></div></div></section>
+
+<section class="slide " aria-label="The structure of a neuron, the cell body and processes">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; The neuron</p><h2 class="slide-title">The neuron: cell body and processes</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><div class="split"><div class="slide-content"><p class="lead-in">A <strong>neuron</strong> is the signaling cell: excitable, able to carry an impulse, and <strong>unable to divide</strong>. Every neuron has three basic parts.</p><ul><li><strong>Cell body</strong> (the <strong>soma</strong> or <strong>perikaryon</strong>): holds the nucleus and cytoplasm; the metabolic center of the neuron.</li><li><strong>Dendrites</strong>: the branched, tree-like processes that <strong>receive</strong> incoming signals.</li><li><strong>Axon</strong>: the single long process that carries the nerve impulse <strong>away</strong> toward other cells.</li></ul></div><div class="figcol"><div class="imgph" role="img" aria-label="Image placeholder: a labeled multipolar neuron showing cell body, dendrites, and axon. A labeled diagram will be added here."><span class="ph-t">Picture: labeled neuron</span><span class="ph-s">your labeled diagram goes here</span></div></div></div></div></section>
+
+<section class="slide " aria-label="Inside the neuron, the named structures">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; The neuron</p><h2 class="slide-title">Inside the neuron, structure by structure</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><div class="slide-tools"><button type="button" class="pill" id="neuronPillBtn" aria-haspopup="dialog" title="Open a big labeled neuron to point at while you teach"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2"/><line x1="12" y1="12" x2="21" y2="12" stroke="#fff" stroke-width="2"/><line x1="3" y1="9" x2="5" y2="11" stroke="#fff" stroke-width="2"/><line x1="3" y1="15" x2="5" y2="13" stroke="#fff" stroke-width="2"/><circle cx="21" cy="12" r="1.7" fill="#fff"/></svg>Pull up the neuron</button></div><table class="dtable"><caption>The named internal structures and what each one does</caption><thead><tr><th scope="col">Structure</th><th scope="col">What it is / does</th></tr></thead><tbody><tr><th scope="row">Nissl bodies</th><td>Clusters of rough ER and ribosomes in the cell body; the site of protein synthesis.</td></tr><tr><th scope="row">Neurofibrils</th><td>Cytoskeletal fibers that give the neuron its shape and support.</td></tr><tr><th scope="row">Microtubules</th><td>Cytoskeletal tubes that transport materials along the neuron.</td></tr><tr><th scope="row">Axon hillock</th><td>The cone-shaped region where the cell body joins the axon.</td></tr><tr><th scope="row">Axoplasm and axolemma</th><td>The cytoplasm of the axon and the plasma membrane of the axon.</td></tr><tr><th scope="row">Axon terminals</th><td>The fine branches at the far end of the axon that contact the target cell.</td></tr><tr><th scope="row">Lipofuscin</th><td>A harmless pigment that builds up in neurons with age.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="The synapse">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; The synapse</p><h2 class="slide-title">The synapse</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><div class="split"><div class="slide-content"><p class="lead-in">A <strong>synapse</strong> is the site where a neuron communicates with another neuron, a muscle cell, or a gland. At a <strong>chemical synapse</strong> there is no direct contact; the signal crosses as neurotransmitter molecules.</p><ul><li><strong>Synaptic end bulbs</strong>: the swellings at the axon terminal that hold the signal-sending machinery.</li><li><strong>Synaptic vesicles</strong>: the tiny sacs inside the end bulbs that store <strong>neurotransmitter</strong>.</li><li><strong>Synaptic cleft</strong>: the narrow gap the neurotransmitter diffuses across.</li><li><strong>Neurotransmitters</strong>: the chemical messengers that carry the signal across the cleft to the next cell.</li></ul></div><div class="figcol"><svg class="figsvg" viewBox="0 0 480 340" role="img" aria-labelledby="synT synD" style="max-width:430px"><title id="synT">A chemical synapse</title><desc id="synD">A presynaptic end bulb holds synaptic vesicles of neurotransmitter. The neurotransmitter is released into the synaptic cleft and crosses to receptors on the postsynaptic cell.</desc>
+<path d="M120 45 Q230 18 330 55 Q372 78 352 130 Q345 158 352 178 L92 178 Q72 150 80 120 Q70 78 120 45 Z" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/>
+<g fill="#C9A14A" stroke="#0B1530" stroke-width="1.5"><circle cx="170" cy="95" r="12"/><circle cx="215" cy="78" r="12"/><circle cx="258" cy="100" r="12"/><circle cx="300" cy="92" r="12"/><circle cx="195" cy="132" r="12"/><circle cx="245" cy="140" r="12"/><circle cx="292" cy="128" r="12"/></g>
+<rect x="70" y="225" width="320" height="55" rx="8" fill="#F6DDD2" stroke="#8B3A2E" stroke-width="3"/>
+<g fill="#8B3A2E"><rect x="150" y="217" width="14" height="11" rx="2"/><rect x="205" y="217" width="14" height="11" rx="2"/><rect x="258" y="217" width="14" height="11" rx="2"/><rect x="305" y="217" width="14" height="11" rx="2"/></g>
+<g fill="#8B3A2E"><circle cx="175" cy="200" r="6"/><circle cx="215" cy="206" r="6"/><circle cx="255" cy="200" r="6"/><circle cx="300" cy="208" r="6"/><circle cx="197" cy="216" r="6"/><circle cx="240" cy="216" r="6"/></g>
+<g stroke="#7a8190" stroke-width="1.5"><path d="M215 34 L210 58"/><path d="M120 134 L172 112"/><path d="M395 152 L340 198"/><path d="M360 205 L305 205"/><path d="M240 312 L240 252"/></g>
+<g fill="#0B1530" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700"><text x="215" y="28" text-anchor="middle">Synaptic end bulb</text><text x="8" y="140">Synaptic vesicles</text><text x="472" y="150" text-anchor="end">Synaptic cleft</text><text x="472" y="205" text-anchor="end">Neurotransmitters</text><text x="240" y="324" text-anchor="middle">Postsynaptic cell</text></g></svg><p class="figcap"><strong>A chemical synapse.</strong> No direct contact; the signal crosses the cleft as neurotransmitter.</p></div></div>
+<div class="slide-content"><h3>Named by what the axon ends on</h3></div>
+<div class="figrow">
+<div class="figcard"><svg viewBox="0 0 170 110" role="img" aria-label="Axodendritic synapse: an axon ending on a dendrite"><g stroke="#0B1530" stroke-width="4" fill="none" stroke-linecap="round"><path d="M120 18 L120 70"/><path d="M120 34 L148 16"/><path d="M120 48 L150 64"/><path d="M18 86 L110 66"/></g><circle cx="114" cy="64" r="9" fill="#8B3A2E"/></svg><p class="fl">Axodendritic</p><p class="fs">axon &rarr; dendrite</p></div>
+<div class="figcard"><svg viewBox="0 0 170 110" role="img" aria-label="Axosomatic synapse: an axon ending on a cell body"><circle cx="120" cy="58" r="28" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/><circle cx="120" cy="58" r="9" fill="#0B1530"/><line x1="14" y1="86" x2="96" y2="70" stroke="#0B1530" stroke-width="4" stroke-linecap="round"/><circle cx="99" cy="69" r="9" fill="#8B3A2E"/></svg><p class="fl">Axosomatic</p><p class="fs">axon &rarr; cell body</p></div>
+<div class="figcard"><svg viewBox="0 0 170 110" role="img" aria-label="Axoaxonic synapse: an axon ending on another axon"><line x1="36" y1="82" x2="150" y2="82" stroke="#0B1530" stroke-width="5" stroke-linecap="round"/><line x1="60" y1="16" x2="92" y2="68" stroke="#0B1530" stroke-width="4" stroke-linecap="round"/><circle cx="95" cy="72" r="9" fill="#8B3A2E"/></svg><p class="fl">Axoaxonic</p><p class="fs">axon &rarr; another axon</p></div>
+</div></div></section>
+
+<section class="slide " aria-label="Classification of neurons by shape">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Classifying neurons</p><h2 class="slide-title">By shape: structural classification</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><table class="dtable"><caption>Structural classification, by shape</caption><thead><tr><th scope="col">Type</th><th scope="col">Shape and where it is found</th></tr></thead><tbody><tr><th scope="row">Multipolar neuron</th><td>Many dendrites and one axon; the most common type, found in the brain and cord and as motor neurons.</td></tr><tr><th scope="row">Bipolar neuron</th><td>One dendrite and one axon; found in the retina, the inner ear, and the olfactory area.</td></tr><tr><th scope="row">Unipolar neuron</th><td>A single fused process; the typical shape of a sensory neuron.</td></tr><tr><th scope="row">Purkinje cells</th><td>A distinctive multipolar neuron found in the cerebellum.</td></tr><tr><th scope="row">Pyramidal cells</th><td>A distinctive multipolar neuron found in the cerebral cortex.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="Classification of neurons by function">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 2 &middot; Classifying neurons</p><h2 class="slide-title">By direction: functional classification</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><table class="dtable"><caption>Functional classification, by the direction the signal travels</caption><thead><tr><th scope="col">Type</th><th scope="col">Direction and shape</th></tr></thead><tbody><tr><th scope="row">Sensory (afferent) neurons</th><td>Carry sensory input <strong>toward</strong> the CNS; most are unipolar.</td></tr><tr><th scope="row">Motor (efferent) neurons</th><td>Carry motor commands <strong>away</strong> from the CNS; these are multipolar.</td></tr><tr><th scope="row">Interneurons</th><td>Also called association neurons; they connect sensory and motor neurons within the CNS and are multipolar.</td></tr></tbody></table><div class="takeaway"><strong>Afferent</strong> arrives at the CNS; <strong>efferent</strong> exits it. Interneurons live entirely inside the CNS and do the connecting.</div></div></section>
+
+<section class="slide divider" aria-label="Part 3 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 3</p><h2>Glia, Myelin, and Matter</h2><p>The support cells, the fatty wrapping that speeds the signal, and the names tissue takes in the CNS versus the PNS.</p></div></div></section>
+
+<section class="slide " aria-label="The neuroglia of the central nervous system">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Neuroglia</p><h2 class="slide-title">Neuroglia of the CNS</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><p class="lead-in"><strong>Neuroglia</strong> (glial cells) are the support cells of nervous tissue. They nourish, support, and protect neurons, make up about half the volume of the CNS, and unlike neurons they can still divide.</p><table class="dtable"><caption>The four glia of the central nervous system</caption><thead><tr><th scope="col">Glial cell</th><th scope="col">Role</th></tr></thead><tbody><tr><th scope="row">Astrocytes</th><td>Star-shaped cells that give structural support, help form the blood-brain barrier, guide neuron growth, and maintain the chemical environment.</td></tr><tr><th scope="row">Oligodendrocytes</th><td>Cells that form the <strong>myelin sheaths of the CNS</strong>.</td></tr><tr><th scope="row">Microglia</th><td>Small phagocytic cells that remove debris and microbes.</td></tr><tr><th scope="row">Ependymal cells</th><td>Cells that line the ventricles and central canal and help produce and circulate cerebrospinal fluid.</td></tr></tbody></table></div></section>
+
+<section class="slide " aria-label="The neuroglia of the peripheral nervous system">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Neuroglia</p><h2 class="slide-title">Neuroglia of the PNS</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><table class="dtable"><caption>The two glia of the peripheral nervous system</caption><thead><tr><th scope="col">Glial cell</th><th scope="col">Role</th></tr></thead><tbody><tr><th scope="row">Schwann cells</th><td>Cells that form the <strong>myelin sheath around PNS axons</strong> and aid axon regeneration.</td></tr><tr><th scope="row">Satellite cells</th><td>Cells that surround and support the cell bodies of PNS neurons in <strong>ganglia</strong>.</td></tr></tbody></table><div class="takeaway">Two glia make myelin: <strong>oligodendrocytes</strong> in the CNS, <strong>Schwann cells</strong> in the PNS. That single difference decides whether a cut axon can regrow.</div></div></section>
+
+<section class="slide " aria-label="Myelination and the PNS versus CNS contrast">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Myelination</p><h2 class="slide-title">Myelination</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><div class="slide-content"><p class="lead-in"><strong>Myelin</strong> is a fatty wrapping around an axon. It insulates the axon and makes the nerve impulse travel much faster.</p><ul><li><strong>Myelin sheath</strong>: a multilayered covering of lipid and protein wrapped around an axon.</li><li><strong>Nodes of Ranvier</strong>: the gaps in the myelin sheath, spaced along the axon.</li><li><strong>Saltatory conduction</strong>: the fast conduction in which the impulse jumps from node to node.</li></ul></div><table class="dtable" style="margin-top:14px"><caption>PNS versus CNS myelination</caption><thead><tr><th scope="col">Feature</th><th scope="col">PNS myelination</th><th scope="col">CNS myelination</th></tr></thead><tbody><tr><th scope="row">Cell that makes the myelin</th><td>A <strong>Schwann cell</strong>, one per axon segment</td><td>An <strong>oligodendrocyte</strong>, one cell for up to 15 axons</td></tr><tr><th scope="row">Neurolemma</th><td><strong>Present</strong>; it is the outer layer of the Schwann cell</td><td><strong>Absent</strong></td></tr><tr><th scope="row">Axon regeneration</th><td>Possible; the neurolemma guides the axon as it regrows</td><td>Very limited, because there is no neurolemma</td></tr></tbody></table><div class="takeaway">Myelination increases from birth to maturity, so an infant's nerve conduction is slower than an adult's.</div></div></section>
+
+<section class="slide " aria-label="Collections of nervous tissue and gray versus white matter">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Organization</p><h2 class="slide-title">Collections of nervous tissue</h2></div><div class="slide-meta">Nervous</div></header>
+<div class="slide-body"><p class="lead-in">The same structure takes a different name depending on whether it sits in the CNS or the PNS. Learn these as pairs.</p><table class="dtable"><caption>Same structure, two names</caption><thead><tr><th scope="col">Structure</th><th scope="col">In the CNS</th><th scope="col">In the PNS</th></tr></thead><tbody><tr><th scope="row">A cluster of cell bodies</th><td>Nucleus</td><td>Ganglion</td></tr><tr><th scope="row">A bundle of axons</th><td>Tract</td><td>Nerve</td></tr></tbody></table><div class="slide-content" style="margin-top:14px"><ul><li><strong>White matter</strong> = nervous tissue made of <strong>myelinated axons</strong>. <strong>Gray matter</strong> = cell bodies, dendrites, unmyelinated axons, and neuroglia.</li><li>In the <strong>spinal cord</strong>, white matter is on the outside and gray on the inside; in the <strong>brain</strong>, gray is on the outside and white on the inside.</li></ul></div>
+<div class="figrow">
+<div class="figcard"><svg viewBox="0 0 180 130" role="img" aria-label="A cluster of neuron cell bodies, drawn as a clump of filled circles"><ellipse cx="90" cy="65" rx="72" ry="50" fill="none" stroke="#7a8190" stroke-width="2" stroke-dasharray="5 5"/><g fill="#0B1530"><circle cx="62" cy="48" r="13"/><circle cx="96" cy="42" r="13"/><circle cx="124" cy="60" r="13"/><circle cx="70" cy="82" r="13"/><circle cx="102" cy="80" r="13"/><circle cx="130" cy="92" r="13"/><circle cx="88" cy="63" r="13"/></g></svg><p class="fl">Cluster of cell bodies</p><p class="fs">Nucleus (CNS) &middot; Ganglion (PNS)</p></div>
+<div class="figcard"><svg viewBox="0 0 180 130" role="img" aria-label="A bundle of axons, drawn as parallel lines inside a sheath"><ellipse cx="90" cy="65" rx="74" ry="34" fill="none" stroke="#C9A14A" stroke-width="3"/><g stroke="#0B1530" stroke-width="4" stroke-linecap="round"><line x1="28" y1="48" x2="152" y2="48"/><line x1="28" y1="58" x2="152" y2="58"/><line x1="28" y1="66" x2="152" y2="66"/><line x1="28" y1="74" x2="152" y2="74"/><line x1="28" y1="84" x2="152" y2="84"/></g></svg><p class="fl">Bundle of axons</p><p class="fs">Tract (CNS) &middot; Nerve (PNS)</p></div>
+<div class="figcard"><svg viewBox="0 0 180 130" role="img" aria-label="Spinal cord cross-section: white matter on the outside, gray matter inside"><circle cx="90" cy="65" r="52" fill="#fff" stroke="#0B1530" stroke-width="3"/><path d="M68 38 Q90 54 112 38 Q124 64 112 92 Q90 76 68 92 Q56 64 68 38 Z" fill="#9aa3ad"/></svg><p class="fl">Spinal cord</p><p class="fs">White outside, gray inside</p></div>
+<div class="figcard"><svg viewBox="0 0 180 130" role="img" aria-label="Brain cross-section: gray matter on the outside, white matter inside"><circle cx="90" cy="65" r="52" fill="#9aa3ad" stroke="#0B1530" stroke-width="3"/><circle cx="90" cy="65" r="33" fill="#fff" stroke="#0B1530" stroke-width="1.5"/></svg><p class="fl">Brain (cerebrum)</p><p class="fs">Gray outside, white inside</p></div>
+</div></div></section>
+
+<section class="slide " aria-label="Clinical, when the support cells fail">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 3 &middot; Clinical</p><h2 class="slide-title">When the support cells fail</h2></div><div class="slide-meta">Clinical</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Neurons cannot divide, so a tumor of nervous tissue almost never comes from neurons. It comes from the glia, which can still divide. A <strong>glioma</strong> is a tumor of glial cells and the most common type of brain tumor.</li><li>In <strong>multiple sclerosis</strong>, the immune system strips myelin from CNS axons and signals slow or fail.</li><li>The <strong>neurolemma</strong> on Schwann cells, absent on oligodendrocytes, is why a cut nerve in the arm can regrow but a cut tract in the cord usually cannot.</li><li>Because the axon depends on the cell body for proteins, an injury that <strong>separates the two kills the axon beyond the cut</strong>. The location of a nerve injury, near or far from the cell body, helps predict whether the neuron survives.</li></ul></div></div></section>
+
+<section class="slide divider" aria-label="Part 4 divider"><div class="slide-body"><div class="divhero"><p class="dn">Part 4</p><h2>Check Your Understanding</h2><p>From recall to reasoning, then the takeaways and your study questions.</p></div></div></section>
+
+<section class="slide " aria-label="Recall, name the cell">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Recall (DOK 1)</p><h2 class="slide-title">Name the cell</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 1 &middot; Recall</p><p class="prompt2">Which CNS glial cell makes the myelin sheath?</p><div class="choices"><button type="button" class="choice" data-correct="false">Astrocyte</button><button type="button" class="choice" data-correct="true">Oligodendrocyte</button><button type="button" class="choice" data-correct="false">Microglia</button><button type="button" class="choice" data-correct="false">Schwann cell</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>Oligodendrocyte.</strong> In the CNS oligodendrocytes myelinate (one cell for up to 15 axons); in the PNS Schwann cells do (one per axon segment).</p></div></div></div></section>
+
+<section class="slide " aria-label="Apply the term">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Skill / concept (DOK 2)</p><h2 class="slide-title">Apply the term</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 2 &middot; Skill / concept</p><p class="prompt2">An axon ending on the cell body of the next neuron forms which synapse?</p><div class="choices"><button type="button" class="choice" data-correct="false">Axodendritic</button><button type="button" class="choice" data-correct="true">Axosomatic</button><button type="button" class="choice" data-correct="false">Axoaxonic</button><button type="button" class="choice" data-correct="false">Electrical</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>Axosomatic.</strong> Synapses are named for what the axon ends on: a dendrite (axodendritic), a cell body / soma (axosomatic), or another axon (axoaxonic).</p></div></div></div></section>
+
+<section class="slide " aria-label="Reason it through">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Part 4 &middot; Strategic reasoning (DOK 3)</p><h2 class="slide-title">Reason it through</h2></div><div class="slide-meta">Practice</div></header>
+<div class="slide-body"><div class="q decision"><p class="lab">Depth of Knowledge 3 &middot; Strategic reasoning</p><p class="prompt2">Why can a cut nerve in the arm often regrow, while a cut tract in the spinal cord usually cannot?</p><div class="choices"><button type="button" class="choice" data-correct="true">PNS Schwann cells have a neurolemma that guides regrowth; CNS oligodendrocytes lack one.</button><button type="button" class="choice" data-correct="false">Arm nerves carry only sensory fibers, which always regrow.</button><button type="button" class="choice" data-correct="false">The spinal cord has no myelin to repair.</button></div><div class="reveal" hidden><p class="rlab">Answer</p><p><strong>The neurolemma.</strong> The Schwann cell's neurolemma provides a regrowth channel in the PNS; CNS oligodendrocytes have none, so central tracts rarely recover.</p></div></div></div></section>
+
+<section class="slide " aria-label="Key takeaways">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Wrap-up</p><h2 class="slide-title">Key takeaways</h2></div><div class="slide-meta">Summary</div></header>
+<div class="slide-body"><div class="slide-content"><ul><li>Divisions: <strong>CNS</strong> (brain + cord) and <strong>PNS</strong> (nerves, ganglia, receptors); the PNS motor side is <strong>somatic, autonomic</strong> (sympathetic / parasympathetic), and <strong>enteric</strong>.</li><li>Three functions: <strong>sensory</strong> in, <strong>integrative</strong> in the CNS, <strong>motor</strong> out to effectors.</li><li>A neuron = <strong>cell body + dendrites + axon</strong>; it cannot divide. Know Nissl bodies, neurofibrils, microtubules, axon hillock, axoplasm/axolemma, axon terminals, lipofuscin.</li><li>The synapse: end bulbs, vesicles, cleft, neurotransmitters; named axodendritic / axosomatic / axoaxonic.</li><li>Classify by shape (multipolar, bipolar, unipolar; Purkinje, pyramidal) and by direction (sensory/afferent, motor/efferent, interneuron).</li><li>Glia divide and support: astrocytes, oligodendrocytes, microglia, ependymal (CNS); Schwann, satellite (PNS). Myelin gives <strong>saltatory conduction</strong> at the <strong>nodes of Ranvier</strong>.</li><li>Names: <strong>nucleus/ganglion</strong> for cell bodies, <strong>tract/nerve</strong> for axons; <strong>white</strong> = myelinated axons, <strong>gray</strong> = cell bodies.</li></ul></div></div></section>
+
+<section class="slide " aria-label="Study questions">
+<header class="slide-header"><div class="slide-num"></div><div><p class="slide-eyebrow">Given, not Googled</p><h2 class="slide-title">Study questions</h2></div><div class="slide-meta">Synthesis</div></header>
+<div class="slide-body"><div class="slide-content"><p class="lead-in">Answer these in writing, in your own words. Bring them to class; they are the reasoning the exams ask for.</p><ul><li>Name the parts of a neuron and the direction a signal travels through them.</li><li>Compare neurons and neuroglia by what each one does.</li><li>Classify neurons by structure and by function, and give an example of each.</li><li>Explain what myelin is, which glia produce it, and what it does for a signal.</li></ul></div></div></section>
+
+</main>
+<p class="foot">Dr. Sharilyn Rennie &middot; Majors &middot; Human Anatomy &middot; Functional Organization &amp; Nervous Tissue. Need a PDF? Use Print / Save PDF above, or download the accessible PDF from Canvas.</p>
+<div class="present-bar"><button type="button" class="prev" aria-label="Previous slide">&#8249;</button><span class="count" id="presentCount">1 / 1</span><button type="button" class="next" aria-label="Next slide">&#8250;</button><button type="button" class="exit">Exit</button></div>
+<script>
+(function(){document.querySelectorAll('.deck .slide').forEach(function(s,i){var n=s.querySelector('.slide-num');if(n)n.textContent=(i<10?'0':'')+i;});})();
+(function(){document.querySelectorAll('.decision').forEach(function(g){var r=g.querySelector('.reveal');g.querySelectorAll('.choice').forEach(function(b){b.addEventListener('click',function(){g.querySelectorAll('.choice').forEach(function(x){x.classList.remove('right','wrong');x.classList.add(x.getAttribute('data-correct')==='true'?'right':'wrong');});if(r)r.hidden=false;});});});})();
+(function(){var pr=document.getElementById('printBtn');if(pr)pr.addEventListener('click',function(){window.print();});})();
+(function(){var slides=[].slice.call(document.querySelectorAll('.deck .slide'));if(!slides.length)return;var idx=0,on=false;var bar=document.querySelector('.present-bar'),countEl=document.getElementById('presentCount');var prev=bar.querySelector('.prev'),next=bar.querySelector('.next'),exitB=bar.querySelector('.exit');
+function show(i){idx=Math.max(0,Math.min(slides.length-1,i));slides.forEach(function(s,k){s.classList.toggle('is-current',k===idx);});countEl.textContent=(idx+1)+' / '+slides.length;prev.disabled=idx===0;next.disabled=idx===slides.length-1;}
+function enter(i){on=true;document.body.classList.add('present');show(i||0);if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(function(){});}
+function exit(){on=false;document.body.classList.remove('present');slides.forEach(function(s){s.classList.remove('is-current');});if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(function(){});}
+var pb=document.getElementById('presentBtn');if(pb)pb.addEventListener('click',function(){enter(0);});
+prev.addEventListener('click',function(){show(idx-1);});next.addEventListener('click',function(){show(idx+1);});exitB.addEventListener('click',exit);
+document.addEventListener('keydown',function(e){if(!on)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();show(idx+1);}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(idx-1);}else if(e.key==='Escape'){exit();}});
+document.addEventListener('fullscreenchange',function(){if(!document.fullscreenElement&&on)exit();});
+})();
+</script>
+<div class="lightbox" id="lightbox" hidden><img class="lb-img" src="" alt=""><button type="button" class="lb-close" aria-label="Close enlarged image">&times;</button></div>
+<script>
+(function(){var lb=document.getElementById('lightbox');if(!lb)return;var img=lb.querySelector('.lb-img');var cb=lb.querySelector('.lb-close');
+document.querySelectorAll('.slidefig').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();img.src=el.currentSrc||el.src;img.alt=el.alt||'';lb.hidden=false;});});
+function close(){lb.hidden=true;img.removeAttribute('src');}
+lb.addEventListener('click',function(e){if(e.target!==img)close();});
+cb.addEventListener('click',function(e){e.stopPropagation();close();});
+document.addEventListener('keydown',function(e){if(!lb.hidden&&e.key==='Escape')close();});})();
+</script>
+<script>(function(){var b=document.getElementById("backBtn");if(!b)return;if(document.referrer||window.history.length>1){b.hidden=false;}b.addEventListener("click",function(){if(history.length>1)history.back();else if(document.referrer)location.href=document.referrer;});})();</script>
+<div class="imgmodal" id="neuronModal" hidden role="dialog" aria-modal="true" aria-label="Labeled neuron diagram"><div class="imgmodal-card"><button type="button" class="imgmodal-close" aria-label="Close the neuron diagram">&times;</button><p class="mh">The neuron, labeled</p>
+<svg class="nrn" viewBox="0 0 940 440" role="img" aria-labelledby="nrnT nrnD"><title id="nrnT">A labeled multipolar neuron</title><desc id="nrnD">Dendrites feed into the cell body, which holds the nucleus and Nissl bodies. The axon leaves at the axon hillock, is wrapped in myelin with gaps called nodes of Ranvier, and ends in axon terminals.</desc>
+<g fill="none" stroke="#0B1530" stroke-width="5" stroke-linecap="round"><path d="M205 175 C150 150 120 120 70 95"/><path d="M120 122 C112 100 106 80 100 60"/><path d="M150 138 C150 115 158 100 175 80"/><path d="M198 152 C150 140 120 138 64 132"/><path d="M205 255 C150 280 120 305 72 335"/><path d="M120 318 C112 340 108 360 104 380"/><path d="M150 300 C150 325 142 345 122 366"/></g>
+<line x1="345" y1="215" x2="755" y2="215" stroke="#0B1530" stroke-width="4"/>
+<g stroke="#0B1530" stroke-width="2"><rect x="360" y="195" width="80" height="40" rx="18" fill="#C9A14A"/><rect x="460" y="195" width="80" height="40" rx="18" fill="#C9A14A"/><rect x="560" y="195" width="80" height="40" rx="18" fill="#C9A14A"/><rect x="655" y="195" width="70" height="40" rx="18" fill="#C9A14A"/></g>
+<path d="M306 188 L345 205 L345 225 L306 242 Z" fill="#C9A14A" stroke="#0B1530" stroke-width="2"/>
+<circle cx="250" cy="215" r="62" fill="#EDF1F3" stroke="#0B1530" stroke-width="3"/>
+<g fill="#8B3A2E"><ellipse cx="205" cy="180" rx="7" ry="4"/><ellipse cx="298" cy="186" rx="7" ry="4"/><ellipse cx="205" cy="250" rx="7" ry="4"/><ellipse cx="298" cy="248" rx="7" ry="4"/><ellipse cx="250" cy="162" rx="7" ry="4"/></g>
+<circle cx="250" cy="215" r="27" fill="#0B1530"/><circle cx="250" cy="215" r="9" fill="#C9A14A"/>
+<g fill="none" stroke="#0B1530" stroke-width="4" stroke-linecap="round"><path d="M755 215 C788 198 805 178 840 162"/><path d="M755 215 C792 215 815 215 850 215"/><path d="M755 215 C788 232 805 255 840 272"/></g>
+<g fill="#8B3A2E"><circle cx="843" cy="160" r="9"/><circle cx="853" cy="215" r="9"/><circle cx="843" cy="274" r="9"/></g>
+<g stroke="#7a8190" stroke-width="1.5"><path d="M72 50 L96 92"/><path d="M312 66 L280 176"/><path d="M150 402 L212 252"/><path d="M250 400 L250 246"/><path d="M372 402 L332 236"/><path d="M540 402 L540 238"/><path d="M438 66 L400 194"/><path d="M620 66 L648 206"/><path d="M866 128 L850 158"/></g>
+<g fill="#0B1530" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700"><text x="40" y="44">Dendrites</text><text x="248" y="60">Nissl bodies</text><text x="64" y="418">Cell body (soma)</text><text x="250" y="418" text-anchor="middle">Nucleus</text><text x="338" y="418">Axon hillock</text><text x="516" y="418">Axon</text><text x="406" y="60">Myelin sheath</text><text x="566" y="60">Node of Ranvier</text><text x="900" y="124" text-anchor="end">Axon terminals</text></g></svg>
+<p class="imgmodal-cap">Point to each structure as you walk the table: dendrites receive, the soma holds the nucleus and Nissl bodies, the axon leaves at the hillock, myelin speeds the signal between the nodes of Ranvier, and the axon terminals pass it on. Press Esc or tap outside to close.</p></div></div>
+<script>(function(){var btn=document.getElementById('neuronPillBtn'),m=document.getElementById('neuronModal');if(!btn||!m)return;var closeB=m.querySelector('.imgmodal-close'),last=null;
+function open(){last=document.activeElement;m.hidden=false;closeB.focus();}
+function close(){m.hidden=true;if(last&&last.focus)last.focus();}
+btn.addEventListener('click',open);closeB.addEventListener('click',close);
+m.addEventListener('click',function(e){if(e.target===m)close();});
+document.addEventListener('keydown',function(e){if(!m.hidden&&e.key==='Escape')close();});})();</script>
+<script>
+/* iframe height-sender: posts this page's height to a parent frame on load and on resize */
+(function(){function h(){var d=document,b=d.body,e=d.documentElement;return Math.max(b.scrollHeight,b.offsetHeight,e.clientHeight,e.scrollHeight,e.offsetHeight);}
+function send(){try{parent.postMessage({type:"setHeight",id:"nervous-tissue",height:h()},"*");}catch(x){}}
+window.addEventListener("load",send);window.addEventListener("resize",send);
+if(window.ResizeObserver){try{new ResizeObserver(send).observe(document.body);}catch(x){}}})();
+</script>
+</body></html>
